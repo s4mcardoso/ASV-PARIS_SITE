@@ -11,24 +11,9 @@ function Footer() {
         </span>
       </div>
       <nav className="flex gap-4">
-        <a
-          href="#"
-          className="font-poppins no-underline text-black p-2.5 rounded-lg bg-transparent border-2 border-gray-900 transition-colors duration-300 hover:bg-gray-900 hover:text-white bg-white bg-opacity-70 backdrop-blur-md shadow-lg font-medium"
-        >
-          Home
-        </a>
-        <a
-          href="#"
-          className="font-poppins no-underline text-black p-2.5 rounded-lg bg-transparent border-2 border-gray-900 transition-colors duration-300 hover:bg-gray-900 hover:text-white bg-white bg-opacity-70 backdrop-blur-md shadow-lg font-medium"
-        >
-          Sobre
-        </a>
-        <a
-          href="#"
-          className="font-poppins no-underline text-black p-2.5 rounded-lg bg-transparent border-2 border-gray-900 transition-colors duration-300 hover:bg-gray-900 hover:text-white bg-white bg-opacity-70 backdrop-blur-md shadow-lg font-medium"
-        >
-          Equipe
-        </a>
+        <a href="#" className="custom-link hover:text-yellow-500 text-lg font-poppins text-white">Home</a>
+        <a href="#" className="custom-link hover:text-yellow-500 text-lg font-poppins text-white">Sobre</a>
+        <a href="#" className="custom-link hover:text-yellow-500 text-lg font-poppins text-white">Equipe</a>
       </nav>
     </footer>
   );

@@ -12,9 +12,9 @@ function Header() {
         </span>
       </div>
       <nav className="flex items-center gap-12">
-        <a href="#" className="custom-link hover:text-yellow-500 text-lg">Home</a>
-        <a href="#" className="custom-link hover:text-yellow-500 text-lg">Sobre</a>
-        <a href="#" className="custom-link hover:text-yellow-500 ">Equipe</a>
+        <a href="#" className="custom-link hover:text-yellow-500 text-lg font-poppins text-white">Home</a>
+        <a href="#" className="custom-link hover:text-yellow-500 text-lg font-poppins text-white">Sobre</a>
+        <a href="#" className="custom-link hover:text-yellow-500 text-lg font-poppins text-white ">Equipe</a>
         <div className="flex gap-2 items-center">
 
           <a
@@ -24,7 +24,7 @@ function Header() {
             className="inline-flex items-center justify-center w-8 h-8 bg-green-600 text-white rounded-full border-2 border-green-600 transition-colors duration-300 hover:bg-green-700"
           >
             <FaWhatsapp className="w-5 h-5" />
-          
+
           </a>
           <a
             href="https://www.instagram.com/asv.engenharia_?igsh=bDhiM3c3dm81ajB1"

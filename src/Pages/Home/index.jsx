@@ -10,10 +10,10 @@ function Home() {
                 <Header />
                 <section className="flex relative container mx-auto w-full h-screen items-center justify-between">
                     <div className="flex flex-col justify-start items-start p-10 max-w-2xl w-full gap-3 bg-yellow bg-opacity-70 backdrop-blur-md rounded-lg border border-white border-opacity-30 shadow-lg">
-                        <h1 className="text-6xl font-bold text-left text-[#090d63]">
+                        <h1 className="text-6xl font-bold text-left text-[#1a73e8]">
                             Inove Seu Espaço Conosco
                         </h1>
-                        <p className="text-2xl mt-2 text-left text-[#090d63]">
+                        <p className="text-2xl mt-2 text-left text-[#1a73e8]">
                             Transforme sua visão em realidade com nossa expertise em engenharia
                             e arquitetura. Descubra inovação e excelência em Sorocaba.
                         </p>

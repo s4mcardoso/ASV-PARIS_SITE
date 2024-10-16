@@ -28,11 +28,11 @@
 }
 
 .custom-bg-blue{
-    @apply bg-[#090d63]
+    @apply bg-[#2633ab]
 }
 
 .custom-bg-yellow{
-  @apply bg-[#FFFF00]
+  @apply bg-[#f0bc13]
 }
 
 .custom-link:hover {

@@ -4,15 +4,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
-  --cor-azul: #1E90FF; /* Use para cabeçalhos, links e botões principais */
+  --cor-azul: #003366; /* Use para cabeçalhos, links e botões principais */
   --cor-amarelo: #FFD700; /* Ótimo para botões secundários e ícones */
   --cor-cinza-claro: #F5F5F5; /* Ideal para o fundo do site */
   --cor-branco: #FFFFFF; /* Utilize para áreas de texto e espaços em branco */
 }
 
-body {
+
+htlm, body {
   background-color: var(--cor-cinza-claro);
   font-family: 'Poppins', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .custom-bg-blue {

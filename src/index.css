@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* styles.css */
+.custom-mt-29 {
+  margin-top: 10rem; /* 10rem equivale a 160px */
+}
+
+.custom-link {
+  @apply text-white flex
+}
+
+.gless-box {
+  @apply bg-white bg-opacity-70 backdrop-blur-md rounded-lg border border-white border-opacity-30 shadow-lg
+}
+
+.gless-box-nav {
+  @apply bg-white bg-opacity-70 backdrop-blur-md rounded-lg border border-white border-opacity-30 shadow-lg hover:bg-[#e8eb60] p-2;
+}
+
+
+
+
+.asv-paris-icon{
+    @apply leading-relaxed font-poppins font-semibold text-white;
+}
+
+.custom-bg-blue{
+    @apply bg-[#090d63]
+}
+
+.custom-bg-yellow{
+  @apply bg-[#FFFF00]
+}
+
+.custom-link:hover {
+  @apply text-[#e8eb60] !important; /* Amarelo vibrante sem opacidade */
+}

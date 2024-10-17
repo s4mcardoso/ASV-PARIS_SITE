@@ -1,8 +1,9 @@
-import backgroundImage from '../../assets/9557059hd.png';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import { FaWhatsapp } from 'react-icons/fa';
+import backgroundImage from '../../assets/955706hdrecorterdireita.png';
 import backgroundImage2 from '../../assets/seguro.jpg';
+
 
 function Home() {
     return (
@@ -10,29 +11,28 @@ function Home() {
             <Header />
             {/* HOME */}
             <div className="relative flex flex-col min-h-screen bg-[var(--cor-amarelo)]">
-                <section className="flex relative container mx-auto w-full h-screen items-center justify-between">
-                    <div className="flex flex-col justify-start items-start p-10 max-w-2xl w-full gap-3 backdrop-blur-md rounded-lg shadow-lg bg-white z-20">
+                <section id="home" className="flex relative container mx-auto w-full h-screen items-center justify-between">
+                    <div className="flex flex-col justify-start items-start p-[3rem] max-w-2xl w-full gap-3 backdrop-blur-md rounded-lg shadow-lg bg-white z-20">
                         <h1 className="text-6xl font-bold text-left text-[#003366]">
                             Inove Seu Espaço Conosco
                         </h1>
                         <p className="text-2xl mt-2 text-left text-[#333333]">
-                            Transforme sua visão em realidade com nossa expertise em engenharia
-                            e arquitetura. Descubra inovação e excelência em Sorocaba.
+                            Transforme seus sonhos em realidade com nossa experiência em arquitetura, engenharia elétrica e civil. Em Sorocaba, oferecemos soluções integradas em um só lugar, garantindo qualidade e inovação em cada projeto. Deixe-nos criar o espaço perfeito para você!
                         </p>
                         <a
                             href={`https://wa.me/${5515988150433}`}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="mt-5 inline-flex items-center px-5 py-2 bg-[var(--cor-amarelo)] text-white rounded-lg transition-colors duration-300 hover:bg-[#003366] font-medium"
+                            className="mt-5 inline-flex items-center px-4 py-2 bg-[var(--cor-amarelo)] text-white rounded-lg transition-colors duration-300 hover:bg-[#003366] font-medium"
                         >
-                            Contato <FaWhatsapp className="ml-2 h-8" />
+                            Contato <FaWhatsapp className="ml-2 h-7" />
                         </a>
                     </div>
                     <div className="absolute right-0 flex-shrink-0" style={{ top: '50px', zIndex: 10 }}>
                         <img
                             src={backgroundImage}
                             alt="Imagem vetorial de engenheiro"
-                            className="w-full h-auto max-w-lg object-cover mt-[4.8rem] mr-[7rem]"
+                            className="w-full h-auto max-w-lg object-cover mt-[10.2rem] mr-[7rem]"
                         />
                     </div>
                 </section>
@@ -46,7 +46,7 @@ function Home() {
                 <section className="flex relative container mx-auto w-full h-screen items-center justify-between z-10">
                     <div className="flex flex-col justify-start items-start p-10 max-w-2xl w-full gap-3 backdrop-blur-md rounded-lg shadow-lg bg-white z-20 ml-auto">
                         <h1 className="text-6xl font-bold text-left text-[#FFD700]">
-                            Crie com Nossa Equipe
+                            Construa com Nossa Equipe
                         </h1>
                         <p className="text-2xl mt-2 text-left text-[#333333]">
                             Em Sorocaba, SP, transformamos a visão em realidade. Oferecemos serviços superiores de engenharia elétrica, civil e arquitetura, combinando inovação com excelência. Quer se trate de projetos residenciais ou comerciais, nossa expertise garante soluções eficientes e estéticas que superam expectativas. Confie em quem entende de construção com precisão e paixão. Vamos construir juntos.
@@ -60,13 +60,6 @@ function Home() {
                         >
                             Fale Conosco <FaWhatsapp className="ml-2 h-8" />
                         </a>
-                    </div>
-                    <div className="absolute right-0 flex-shrink-0" style={{ top: '50px', zIndex: 10 }}>
-                        {/* <img
-                            src={backgroundImage}
-                            alt="Imagem vetorial de engenheiro"
-                            className="w-full h-auto max-w-lg object-cover mt-[4.8rem] mr-[7rem]"
-                        /> */}
                     </div>
                 </section>
             </div>

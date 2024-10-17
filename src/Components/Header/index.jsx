@@ -8,11 +8,11 @@ function Header() {
         <img className="w-12 h-auto mr-1" src={eiffelImage} alt="Torre Eiffel" />
         <span className="asv-paris-icon">
           ASV PARIS<br />
-          Elétrica - Civil - Arquitetura
+          Engenharia Elétrica e Civil
         </span>
       </div>
       <nav className="flex items-center gap-12">
-        <a href="#" className="custom-link text-lg font-poppins text-[var(--cor-branco)]">Home</a>
+        <a href="home" className="custom-link text-lg font-poppins text-[var(--cor-branco)]">Home</a>
         <a href="#" className="custom-link text-lg font-poppins text-[var(--cor-branco)]">Sobre</a>
         <a href="#" className="custom-link text-lg font-poppins text-[var(--cor-branco)]">Equipe</a>
         <div className="flex gap-2 items-center">

@@ -74,7 +74,7 @@ function Home() {
                             Serviços de Engenharia <br />e Arquitetura em Sorocaba
                         </h1>
                         <p className="text-2xl mt-2 text-left text-[var(--cor-amarelo-escuro)]">
-                            Confie na ASV PARIS para soluções completas em engenharia elétrica, civil e arquitetura. Localizada em [colocar localização aqui], nossa equipe de especialistas está pronta para transformar seu projeto em realidade.
+                            Confie na ASV PARIS para soluções completas em engenharia elétrica, civil e arquitetura. Localizada em -colocar localização aqui- , nossa equipe de especialistas está pronta para transformar seu projeto em realidade.
                         </p>
 
                     </div>

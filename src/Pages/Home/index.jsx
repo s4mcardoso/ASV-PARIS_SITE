@@ -63,6 +63,24 @@ function Home() {
                     </div>
                 </section>
             </div>
+
+            <div className="relative flex flex-col min-h-screen bg-[var(--cor-branco)]" >
+
+                <section className="flex relative container mx-auto w-full h-screen items-center justify-between z-10">
+
+                    <div className="flex flex-col justify-start items-start p-10 max-w-lg min-h-screen mt-20 gap-5">
+
+                        <h1 className="text-5xl font-bold text-left text-[var(--cor-azul)] whitespace-nowrap">
+                            Serviços de Engenharia <br />e Arquitetura em Sorocaba
+                        </h1>
+                        <p className="text-2xl mt-2 text-left text-[var(--cor-amarelo-escuro)]">
+                            Confie na ASV PARIS para soluções completas em engenharia elétrica, civil e arquitetura. Localizada em [colocar localização aqui], nossa equipe de especialistas está pronta para transformar seu projeto em realidade.
+                        </p>
+
+                    </div>
+                </section>
+            </div>
+
             <Footer />
         </>
     );

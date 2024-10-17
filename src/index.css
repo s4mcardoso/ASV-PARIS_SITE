@@ -6,6 +6,7 @@
 :root {
   --cor-azul: #003366; /* Use para cabeçalhos, links e botões principais */
   --cor-amarelo: #FFD700; /* Ótimo para botões secundários e ícones */
+  --cor-amarelo-escuro: #ffd000; /* Ótimo para botões secundários e ícones */
   --cor-cinza-claro: #F5F5F5; /* Ideal para o fundo do site */
   --cor-branco: #FFFFFF; /* Utilize para áreas de texto e espaços em branco */
 }

@@ -3,7 +3,7 @@ import { FaWhatsapp, FaInstagram } from 'react-icons/fa';
 
 function Header() {
   return (
-    <header className="w-full custom-bg-blue h-40 flex items-center justify-between p-4">
+    <header className="w-full custom-bg-blue h-30 flex items-center justify-between p-4">
       <div className="flex items-center">
         <img className="w-12 h-auto mr-1" src={eiffelImage} alt="Torre Eiffel" />
         <span className="asv-paris-icon">

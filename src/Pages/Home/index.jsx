@@ -11,7 +11,7 @@ function Home() {
             <Header />
             {/* HOME */}
             <div className="relative flex flex-col min-h-screen bg-[var(--cor-amarelo)]">
-                <section id="home" className="flex relative container mx-auto w-full h-screen items-center justify-between">
+                <div id="home" className="flex relative container mx-auto w-full h-screen items-center justify-between">
                     <div className="flex flex-col justify-start items-start p-[3rem] max-w-2xl w-full gap-3 backdrop-blur-md rounded-lg shadow-lg bg-white z-20">
                         <h1 className="text-6xl font-bold text-left text-[#003366]">
                             Inove Seu Espaço Conosco
@@ -35,15 +35,16 @@ function Home() {
                             className="w-full h-auto max-w-lg object-cover mt-[10.2rem] mr-[7rem]"
                         />
                     </div>
-                </section>
+                </div>
             </div>
 
             {/* PRÓXIMA SEÇÃO COM BACKGROUND IMAGE E OVERLAY */}
             <div className="relative flex flex-col min-h-screen bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${backgroundImage2})` }}>
+
                 {/* Overlay azul opaco */}
                 <div className="absolute inset-0 bg-blue-900 opacity-70"></div>
 
-                <section className="flex relative container mx-auto w-full h-screen items-center justify-between z-10">
+                <div className="flex relative container mx-auto w-full h-screen items-center justify-between z-10">
                     <div className="flex flex-col justify-start items-start p-10 max-w-2xl w-full gap-3 backdrop-blur-md rounded-lg shadow-lg bg-white z-20 ml-auto">
                         <h1 className="text-6xl font-bold text-left text-[#FFD700]">
                             Construa com Nossa Equipe
@@ -61,12 +62,12 @@ function Home() {
                             Fale Conosco <FaWhatsapp className="ml-2 h-8" />
                         </a>
                     </div>
-                </section>
+                </div>
             </div>
 
             <div className="relative flex flex-col min-h-screen bg-[var(--cor-branco)]" >
 
-                <section className="flex relative container mx-auto w-full h-screen items-center justify-between z-10">
+                <div className="flex relative container mx-auto w-full h-screen items-center justify-between z-10">
 
                     <div className="flex flex-col justify-start items-start p-10 max-w-lg min-h-screen mt-20 gap-5">
 
@@ -78,7 +79,7 @@ function Home() {
                         </p>
 
                     </div>
-                </section>
+                </div>
             </div>
 
             <Footer />

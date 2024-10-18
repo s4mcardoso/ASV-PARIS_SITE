@@ -1,5 +1,5 @@
-import Footer from '../../components/Footer';
-import Header from '../../components/Header';
+import Footer from '../../Components/Footer';
+import Header from '../../Components/Header';
 import { FaWhatsapp } from 'react-icons/fa';
 import backgroundImage from '../../assets/955706hdrecorterdireita.png';
 import backgroundImage2 from '../../assets/seguro.jpg';

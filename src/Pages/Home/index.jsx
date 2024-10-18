@@ -4,7 +4,6 @@ import { FaWhatsapp } from 'react-icons/fa';
 import backgroundImage from '../../assets/955706hdrecorterdireita.png';
 import backgroundImage2 from '../../assets/seguro.jpg';
 
-
 function Home() {
     return (
         <>

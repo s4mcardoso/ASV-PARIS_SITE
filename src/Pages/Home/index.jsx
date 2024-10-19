@@ -9,8 +9,8 @@ function Home() {
         <>
             <Header />
             {/* HOME */}
-            <div className="relative flex flex-col min-h-screen bg-[var(--cor-amarelo)]">
-                <div id="home" className="flex relative container mx-auto w-full h-screen items-center justify-between">
+            <div id="hero-section" className="relative flex flex-col min-h-screen bg-[var(--cor-amarelo)]">
+                <div className="flex relative container mx-auto w-full h-screen items-center justify-between">
                     <div className="flex flex-col justify-start items-start p-[3rem] max-w-2xl w-full gap-3 backdrop-blur-md rounded-lg shadow-lg bg-white z-20">
                         <h1 className="text-6xl font-bold text-left text-[#003366]">
                             Inove Seu Espaço Conosco

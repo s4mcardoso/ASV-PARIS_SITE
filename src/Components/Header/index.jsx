@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import eiffelImage from '../../assets/eiffeltoweroriginal.png';
 import { FaWhatsapp, FaInstagram } from 'react-icons/fa';
 
@@ -12,9 +13,9 @@ function Header() {
         </span>
       </div>
       <nav className="flex items-center gap-12">
-        <a href="home" className="custom-link text-lg font-poppins text-[var(--cor-branco)]">Home</a>
-        <a href="#" className="custom-link text-lg font-poppins text-[var(--cor-branco)]">Sobre</a>
-        <a href="#" className="custom-link text-lg font-poppins text-[var(--cor-branco)]">Equipe</a>
+        <Link to="hero-section" className="custom-link text-lg font-poppins text-[var(--cor-branco)]">Home</Link>
+        <Link to="hero-section" className="custom-link text-lg font-poppins text-[var(--cor-branco)]">Sobre</Link>
+        <Link to="hero-section" className="custom-link text-lg font-poppins text-[var(--cor-branco)]">Equipe</Link>
         <div className="flex gap-2 items-center">
           <a
             href={`https://wa.me/${5515988150433}`}

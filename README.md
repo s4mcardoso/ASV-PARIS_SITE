@@ -1,8 +1,19 @@
-# React + Vite
+# ASVPARIS ENGENHARIA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Descrição**: Este projeto é uma landing page desenvolvida para um escritório de prestação de serviços de engenharia civil, arquitetura e engenharia elétrica, localizada em Sorocaba. Nele foi utilzado as ferramentas: React, Vite e Tailwind CSS para construção e estilização.
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
+- **React**: Biblioteca JavaScript para construir interfaces de usuário.
+- **Vite**: Ferramenta de build rápida e leve para front-end moderno.
+- **Tailwind CSS**: Framework de CSS para estilização rápida e eficiente.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
+- Interface responsiva e moderna.
+- Integração com WhatsApp para contato direto.
+- Seções de apresentação de serviços e equipe.
+- Imagens otimizadas para performance.
+
+## Instalação
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/usuario/nome-do-repositorio.git

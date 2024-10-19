@@ -2,7 +2,9 @@ import Footer from '../../Components/Footer';
 import Header from '../../Components/Header';
 import { FaWhatsapp } from 'react-icons/fa';
 import backgroundImage from '../../assets/955706hdrecorterdireita.png';
-import backgroundImage2 from '../../assets/seguro.jpg';
+import backgroundImage2 from '../../assets/imagemengenharia.jpg';
+import AndreTraçado from '../../assets/AndreBonoraTraçadoFino.png';
+import WanessaTraçada from '../../assets/Wanessa_arquiteta-removebg.png';
 
 function Home() {
     return (
@@ -11,7 +13,7 @@ function Home() {
             {/* HOME */}
             <div id="hero-section" className="relative flex flex-col min-h-screen bg-[var(--cor-amarelo)]">
                 <div className="flex relative container mx-auto w-full h-screen items-center justify-between">
-                    <div className="flex flex-col justify-start items-start p-[3rem] max-w-2xl w-full gap-3 backdrop-blur-md rounded-lg shadow-lg bg-white z-20">
+                    <div className="flex flex-col justify-start items-start p-[2rem] max-w-2xl w-full gap-3 backdrop-blur-md rounded-lg shadow-lg bg-white z-20">
                         <h1 className="text-6xl font-bold text-left text-[#003366]">
                             Inove Seu Espaço Conosco
                         </h1>
@@ -27,30 +29,26 @@ function Home() {
                             Contato <FaWhatsapp className="ml-2 h-7" />
                         </a>
                     </div>
-                    <div className="absolute right-0 flex-shrink-0" style={{ top: '50px', zIndex: 10 }}>
+                    <div className="absolute right-0 flex-shrink-0" style={{ top: '3rem', zIndex: 10 }}>
                         <img
-                            src={backgroundImage}
-                            alt="Imagem vetorial de engenheiro"
-                            className="w-full h-auto max-w-lg object-cover mt-[10.2rem] mr-[7rem]"
+                            src={AndreTraçado}
+                            alt="Imagem do engenheiro André"
+                            className="w-full h-auto max-w-lg object-cover mr-[7rem]"
                         />
                     </div>
                 </div>
             </div>
-
             {/* PRÓXIMA SEÇÃO COM BACKGROUND IMAGE E OVERLAY */}
             <div className="relative flex flex-col min-h-screen bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${backgroundImage2})` }}>
-
                 {/* Overlay azul opaco */}
                 <div className="absolute inset-0 bg-blue-900 opacity-70"></div>
-
                 <div className="flex relative container mx-auto w-full h-screen items-center justify-between z-10">
-                    <div className="flex flex-col justify-start items-start p-10 max-w-2xl w-full gap-3 backdrop-blur-md rounded-lg shadow-lg bg-white z-20 ml-auto">
+                    <div className="flex flex-col justify-start items-start p-8 max-w-2xl w-full gap-3 backdrop-blur-md rounded-lg shadow-lg bg-white z-20 ml-auto">
                         <h1 className="text-6xl font-bold text-left text-[#FFD700]">
                             Construa com Nossa Equipe
                         </h1>
                         <p className="text-2xl mt-2 text-left text-[#333333]">
                             Em Sorocaba, SP, transformamos a visão em realidade. Oferecemos serviços superiores de engenharia elétrica, civil e arquitetura, combinando inovação com excelência. Quer se trate de projetos residenciais ou comerciais, nossa expertise garante soluções eficientes e estéticas que superam expectativas. Confie em quem entende de construção com precisão e paixão. Vamos construir juntos.
-
                         </p>
                         <a
                             href={`https://wa.me/${5515988150433}`}
@@ -61,26 +59,28 @@ function Home() {
                             Fale Conosco <FaWhatsapp className="ml-2 h-8" />
                         </a>
                     </div>
+                    <div className="absolute left-0 flex-shrink-0" style={{ top: '7.8rem', zIndex: 10 }}>
+                        <img
+                            src={WanessaTraçada}
+                            alt="Imagem da arquiteta Wanessa"
+                            className="w-full h-auto max-w-lg object-cover ml-[7rem]"
+                        />
+                    </div>
                 </div>
             </div>
-
-            <div className="relative flex flex-col min-h-screen bg-[var(--cor-branco)]" >
-
+            {/* LOCALIZAÇÂO DE ASVPARIS */}
+            <div className="relative flex flex-col min-h-screen bg-[var(--cor-branco)]">
                 <div className="flex relative container mx-auto w-full h-screen items-center justify-between z-10">
-
-                    <div className="flex flex-col justify-start items-start p-10 max-w-lg min-h-screen mt-20 gap-5">
-
+                    <div className="flex flex-col justify-start items-start p-8 max-w-lg min-h-[40vh] mb-12 gap-3">
                         <h1 className="text-5xl font-bold text-left text-[var(--cor-azul)] whitespace-nowrap">
                             Serviços de Engenharia <br />e Arquitetura em Sorocaba
                         </h1>
                         <p className="text-2xl mt-2 text-left text-[var(--cor-amarelo-escuro)]">
-                            Confie na ASV PARIS para soluções completas em engenharia elétrica, civil e arquitetura. Localizada em -colocar a localização aqui- , nossa equipe de especialistas está pronta para transformar seu projeto em realidade.
+                            Confie na ASV PARIS para soluções completas em engenharia elétrica, civil e arquitetura. Localizada em -colocar a localização aqui-, nossa equipe de especialistas está pronta para transformar seu projeto em realidade.
                         </p>
-
                     </div>
                 </div>
             </div>
-
             <Footer />
         </>
     );

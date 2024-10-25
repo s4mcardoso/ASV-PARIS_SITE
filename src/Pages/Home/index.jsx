@@ -8,6 +8,7 @@ import AsvParisLocation from '../../assets/asvparislocalizacao.jpg';
 import Casal from '../../assets/Imagem do WhatsApp de 2024-10-21 à(s) 13.53.10_1241626f.jpg';
 import WanessaEquipe from '../../assets/wanessa_equipe.jpg';
 import AndreEquipe from '../../assets/andre_equipe.jpg';
+import Trabalhador from '../../assets/tiler-working-renovation-apartment.jpg'
 
 function Home() {
     return (
@@ -94,6 +95,49 @@ function Home() {
                     </div>
                 </div>
             </div>
+
+            {/* Sobre */}
+            <div className="relative flex flex-col min-h-screen bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${Trabalhador})` }}>
+                {/* Camada de sobreposição com efeito vidro */}
+                <div className="absolute inset-0 bg-white opacity-80 backdrop-blur-md"></div>
+                <div className="relative flex flex-col min-h-screen ml-6">
+                    <div className="flex flex-col items-start mt-8 ml-8 z-10"> {/* z-10 para colocar o texto acima da camada */}
+                        <h2 className="text-5xl font-bold text-left text-[var(--cor-azul)] whitespace-nowrap">
+                            Sobre
+                        </h2>
+                        <p className="text-left mt-4">
+                            No mundo da construção civil, é comum encontrar inúmeros problemas que resultam em atrasos e frustrações. Ao observar de perto as dificuldades enfrentadas por engenheiros civis e elétricos, percebemos que a falta de um planejamento integrado pode causar verdadeiras dores de cabeça. Esses contratempos não apenas impactam prazos, mas também a qualidade e a eficiência dos projetos.
+                        </p>
+
+                        <h3 className="font-semibold mt-4 text-[var(--cor-azul)]">Nossa Proposta:</h3>
+                        <p className="text-left mt-2">
+                            Diante desse cenário desafiador, decidimos criar a ASV PARIS, uma empresa dedicada a oferecer uma solução completa para seus projetos. Combinamos as áreas de engenharia civil, elétrica e arquitetura em um único serviço, garantindo que todas as etapas do projeto sejam planejadas e executadas de forma integrada.
+                        </p>
+
+                        <h3 className="font-semibold mt-4 text-[var(--cor-azul)]">Vantagens de Escolher a ASV PARIS:</h3>
+                        <ol className="list-decimal list-inside mt-2">
+                            <li>
+                                <strong className="text-[var(--cor-azul)]">Planejamento Integrado:</strong> Ao trabalharmos juntos desde o início, eliminamos a possibilidade de falhas de comunicação entre as diferentes especialidades, garantindo que todos os aspectos do projeto estejam alinhados.
+                            </li>
+                            <li>
+                                <strong className="text-[var(--cor-azul)]">Eficiência e Agilidade:</strong> A coordenação entre engenheiros civis, elétricos e arquitetos reduz os atrasos e melhora a eficiência no cronograma de execução.
+                            </li>
+                            <li>
+                                <strong className="text-[var(--cor-azul)]">Qualidade Superior:</strong> Com uma equipe multidisciplinar, garantimos que cada detalhe do projeto seja pensado de forma holística, resultando em soluções de maior qualidade.
+                            </li>
+                            <li>
+                                <strong className="text-[var(--cor-azul)]">Tranquilidade para Você:</strong> Deixe os problemas conosco! Nossa abordagem integrada significa menos preocupações para você e um projeto mais fluido.
+                            </li>
+                        </ol>
+
+                        <p className="text-left mt-4">
+                            Na ASV PARIS, nossa missão é acabar com os atrasos e complicações que você enfrenta em seus projetos. Estamos prontos para transformar suas ideias em realidade, com a confiança de que cada fase será bem cuidada.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
             {/* EQUIPE */}
             <div className="relative flex flex-col min-h-screen bg-[var(--cor-branco)]">
                 <div className="flex flex-col items-center mt-8">
@@ -115,7 +159,7 @@ function Home() {
                             />
                             <h3 className="text-xl font-semibold text-[var(--cor-azul)]">Andre Bonóra</h3>
                             <p className="text-base text-gray-700">
-                                Engenheiro Elétrico.
+                                Engenheiro Elétrico
                             </p>
                         </div>
 
@@ -128,7 +172,7 @@ function Home() {
                             />
                             <h3 className="text-xl font-semibold text-[var(--cor-azul)]">Wanessa</h3>
                             <p className="text-base text-gray-700">
-                                Arquiteta.
+                                Arquiteta
                             </p>
                         </div>
 
@@ -141,7 +185,7 @@ function Home() {
                             />
                             <h3 className="text-xl font-semibold text-[var(--cor-azul)]">Membro 3</h3>
                             <p className="text-base text-gray-700">
-                                Breve descrição sobre o Membro 3.
+                                Engenheiro Civil
                             </p>
                         </div>
                     </div>

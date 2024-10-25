@@ -139,7 +139,7 @@ function Home() {
 
 
             {/* EQUIPE */}
-            <div className="relative flex flex-col min-h-screen bg-[var(--cor-branco)]">
+            <div className="relative flex flex-col h-screen bg-[var(--cor-branco)]">
                 <div className="flex flex-col items-center mt-8">
                     <h2 className="text-4xl font-bold text-center text-[var(--cor-azul)] relative after:content-[''] after:block after:w-16 after:h-[2px] after:bg-[var(--cor-azul)] after:mx-auto after:mt-2">
                         EQUIPE

@@ -73,29 +73,6 @@ function Home() {
                     </div>
                 </div>
             </div>
-            {/* LOCALIZAÇÂO DE ASVPARIS */}
-            <div className="relative flex flex-col min-h-screen bg-[var(--cor-branco)]">
-                <div className="flex relative container mx-auto w-full h-screen items-center justify-between z-10">
-                    <div className="flex flex-col justify-start items-start p-8 max-w-lg min-h-[40vh] mb-12 gap-3">
-                        <h1 className="text-5xl font-bold text-left text-[var(--cor-azul)] whitespace-nowrap">
-                            Serviços de Engenharia <br /> e Arquitetura em Sorocaba
-                        </h1>
-                        <p className="text-2xl mt-2 text-left text-[var(--cor-amarelo-escuro)]">
-                            Confie na ASV PARIS para soluções completas em engenharia elétrica, civil e arquitetura.
-                            Localizada na Avenida Elias Maluf, nº 2067 (Piso Superior), nossa equipe de especialistas está pronta para
-                            transformar seu projeto em realidade.
-                        </p>
-                    </div>
-                    <div className="p-8 mr-[8rem]">
-                        <img
-                            src={AsvParisLocation}
-                            alt="Localização ASVPARIS"
-                            className="rounded-lg shadow-lg w-[16rem] h-130 object-cover"
-                        />
-                    </div>
-                </div>
-            </div>
-
             {/* Sobre */}
             <div className="relative flex flex-col min-h-screen bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${Trabalhador})` }}>
                 {/* Camada de sobreposição com efeito vidro */}
@@ -136,6 +113,29 @@ function Home() {
                     </div>
                 </div>
             </div>
+            {/* LOCALIZAÇÂO DE ASVPARIS */}
+            <div className="relative flex flex-col min-h-screen bg-[var(--cor-branco)]">
+                <div className="flex relative container mx-auto w-full h-screen items-center justify-between z-10">
+                    <div className="flex flex-col justify-start items-start p-8 max-w-lg min-h-[40vh] mb-12 gap-3">
+                        <h1 className="text-5xl font-bold text-left text-[var(--cor-azul)] whitespace-nowrap">
+                            Serviços de Engenharia <br /> e Arquitetura em Sorocaba
+                        </h1>
+                        <p className="text-2xl mt-2 text-left text-[var(--cor-amarelo-escuro)]">
+                            Confie na ASV PARIS para soluções completas em engenharia elétrica, civil e arquitetura.
+                            Localizada na Avenida Elias Maluf, nº 2067 (Piso Superior), nossa equipe de especialistas está pronta para
+                            transformar seu projeto em realidade.
+                        </p>
+                    </div>
+                    <div className="p-8 mr-[8rem]">
+                        <img
+                            src={AsvParisLocation}
+                            alt="Localização ASVPARIS"
+                            className="rounded-lg shadow-lg w-[16rem] h-130 object-cover"
+                        />
+                    </div>
+                </div>
+            </div>
+
 
 
             {/* EQUIPE */}

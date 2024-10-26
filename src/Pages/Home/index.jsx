@@ -140,57 +140,57 @@ function Home() {
 
             {/* EQUIPE */}
             <div className="relative flex flex-col h-screen bg-[var(--cor-branco)]">
-                <div className="flex flex-col items-center mt-8">
-                    <h2 className="text-4xl font-bold text-center text-[var(--cor-azul)] relative after:content-[''] after:block after:w-16 after:h-[2px] after:bg-[var(--cor-azul)] after:mx-auto after:mt-2">
-                        EQUIPE
-                    </h2>
-                </div>
+    <div className="flex flex-col items-center mt-8">
+        <h2 className="text-4xl font-bold text-center text-[var(--cor-azul)] relative after:content-[''] after:block after:w-16 after:h-[2px] after:bg-[var(--cor-azul)] after:mx-auto after:mt-2">
+            EQUIPE
+        </h2>
+    </div>
 
-
-                <div className="flex flex-col items-center mt-10">
-                    {/* Container para a linha de membros */}
-                    <div className="flex justify-center gap-[5rem]">
-                        {/* Membro 1 */}
-                        <div className="flex flex-col justify-start items-start p-4 w-[18rem] gap-3 backdrop-blur-md rounded-lg shadow-lg bg-[var(--cor-amarelo)] z-20 h-[26rem]">
-                            <img
-                                src={AndreEquipe}
-                                alt="Membro 1"
-                                className="rounded-lg w-[15rem] h-[15rem] object-cover ml-2"
-                            />
-                            <h3 className="text-xl font-semibold text-[var(--cor-azul)]">Andre Bonóra</h3>
-                            <p className="text-base text-gray-700">
-                                Engenheiro Elétrico
-                            </p>
-                        </div>
-
-                        {/* Membro 2 */}
-                        <div className="flex flex-col justify-start items-start p-4 w-[18rem] gap-3 backdrop-blur-md rounded-lg shadow-lg bg-[var(--cor-amarelo)] z-20 h-[26rem]">
-                            <img
-                                src={WanessaEquipe}
-                                alt="Membro 2"
-                                className="rounded-lg w-[15rem] h-[15rem] object-cover ml-2"
-                            />
-                            <h3 className="text-xl font-semibold text-[var(--cor-azul)]">Wanessa</h3>
-                            <p className="text-base text-gray-700">
-                                Arquiteta
-                            </p>
-                        </div>
-
-                        {/* Membro 3 */}
-                        <div className="flex flex-col justify-start items-start p-4 w-[18rem] gap-3 backdrop-blur-md rounded-lg shadow-lg bg-[var(--cor-amarelo)] z-20 h-[26rem]">
-                            <img
-                                src={Casal}
-                                alt="Membro 3"
-                                className="rounded-lg w-[15rem] h-[15rem] object-cover ml-2 "
-                            />
-                            <h3 className="text-xl font-semibold text-[var(--cor-azul)]">Membro 3</h3>
-                            <p className="text-base text-gray-700">
-                                Engenheiro Civil
-                            </p>
-                        </div>
-                    </div>
-                </div>
+    <div className="flex flex-col items-center mt-10">
+        {/* Container para a linha de membros */}
+        <div className="flex justify-center gap-[5rem]">
+            {/* Membro 1 */}
+            <div className="flex flex-col justify-start items-start p-4 w-[18rem] gap-3 rounded-lg shadow-lg bg-gradient-to-br from-yellow-400 to-yellow-300 backdrop-blur-md transition-transform transform hover:scale-105 hover:shadow-xl h-[26rem]">
+                <img
+                    src={AndreEquipe}
+                    alt="Membro 1"
+                    className="rounded-full w-[15rem] h-[15rem] object-cover mx-auto"
+                />
+                <h3 className="text-xl font-semibold text-[var(--cor-azul)] text-center w-full">Andre Bonóra</h3>
+                <p className="text-base text-gray-700 text-center w-full">
+                    Engenheiro Elétrico
+                </p>
             </div>
+
+            {/* Membro 2 */}
+            <div className="flex flex-col justify-start items-start p-4 w-[18rem] gap-3 rounded-lg shadow-lg bg-gradient-to-br from-yellow-400 to-yellow-300 backdrop-blur-md transition-transform transform hover:scale-105 hover:shadow-xl h-[26rem]">
+                <img
+                    src={WanessaEquipe}
+                    alt="Membro 2"
+                    className="rounded-full w-[15rem] h-[15rem] object-cover mx-auto"
+                />
+                <h3 className="text-xl font-semibold text-[var(--cor-azul)] text-center w-full">Wanessa</h3>
+                <p className="text-base text-gray-700 text-center w-full">
+                    Arquiteta
+                </p>
+            </div>
+
+            {/* Membro 3 */}
+            <div className="flex flex-col justify-start items-start p-4 w-[18rem] gap-3 rounded-lg shadow-lg bg-gradient-to-br from-yellow-400 to-yellow-300 backdrop-blur-md transition-transform transform hover:scale-105 hover:shadow-xl h-[26rem]">
+                <img
+                    src={Casal}
+                    alt="Membro 3"
+                    className="rounded-full w-[15rem] h-[15rem] object-cover mx-auto"
+                />
+                <h3 className="text-xl font-semibold text-[var(--cor-azul)] text-center w-full">Membro 3</h3>
+                <p className="text-base text-gray-700 text-center w-full">
+                    Engenheiro Civil
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
             <Footer />
         </>
     );

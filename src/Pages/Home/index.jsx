@@ -22,7 +22,7 @@ function Home() {
                             Inove Seu Espaço Conosco
                         </h1>
                         <p className="text-2xl mt-2 text-left text-[#333333]">
-                            Transforme seus sonhos em realidade com nossa experiência em arquitetura, engenharia elétrica e civil. Em Sorocaba, oferecemos soluções integradas em um só lugar, garantindo qualidade e inovação em cada projeto. Deixe-nos criar o espaço perfeito para você!
+                            Transforme seus sonhos em realidade com nossa experiência em arquitetura, engenharia elétrica e civil. Em Sorocaba e região, oferecemos soluções integradas em um só lugar, garantindo qualidade e inovação em cada projeto. Deixe-nos criar o espaço perfeito para você!
                         </p>
                         <a
                             href={`https://wa.me/${5515988150433}`}
@@ -83,7 +83,7 @@ function Home() {
                             Sobre
                         </h2>
                         <p className="text-left mt-4">
-                            No mundo da construção civil, é comum encontrar inúmeros problemas que resultam em atrasos e frustrações. Ao observar de perto as dificuldades enfrentadas por engenheiros civis e elétricos, percebemos que a falta de um planejamento integrado pode causar verdadeiras dores de cabeça. Esses contratempos não apenas impactam prazos, mas também a qualidade e a eficiência dos projetos.
+                            No mundo da construção civil, é comum encontrar inúmeros problemas que resultam em atrasos e frustrações. Ao observar de perto as dificuldades enfrentadas por engenheiros civis e eletricistas, percebemos que a falta de um planejamento integrado pode causar verdadeiras dores de cabeça. Esses contratempos não apenas impactam prazos, mas também a qualidade e a eficiência dos projetos.
                         </p>
 
                         <h3 className="font-semibold mt-4 text-[var(--cor-azul)]">Nossa Proposta:</h3>
@@ -97,7 +97,7 @@ function Home() {
                                 <strong className="text-[var(--cor-azul)]">Planejamento Integrado:</strong> Ao trabalharmos juntos desde o início, eliminamos a possibilidade de falhas de comunicação entre as diferentes especialidades, garantindo que todos os aspectos do projeto estejam alinhados.
                             </li>
                             <li>
-                                <strong className="text-[var(--cor-azul)]">Eficiência e Agilidade:</strong> A coordenação entre engenheiros civis, elétricos e arquitetos reduz os atrasos e melhora a eficiência no cronograma de execução.
+                                <strong className="text-[var(--cor-azul)]">Eficiência e Agilidade:</strong> A coordenação entre engenheiros civis, eletricistas e arquitetos reduz os atrasos e melhora a eficiência no cronograma de execução.
                             </li>
                             <li>
                                 <strong className="text-[var(--cor-azul)]">Qualidade Superior:</strong> Com uma equipe multidisciplinar, garantimos que cada detalhe do projeto seja pensado de forma holística, resultando em soluções de maior qualidade.
@@ -155,9 +155,9 @@ function Home() {
                     alt="Membro 1"
                     className="rounded-full w-[15rem] h-[15rem] object-cover mx-auto"
                 />
-                <h3 className="text-xl font-semibold text-[var(--cor-azul)] text-center w-full">Andre Bonóra</h3>
+                <h3 className="text-xl font-semibold text-[var(--cor-azul)] text-center w-full">André Bonora</h3>
                 <p className="text-base text-gray-700 text-center w-full">
-                    Engenheiro Elétrico
+                    Engenheiro Eletricista
                 </p>
             </div>
             {/* Membro 2 */}
@@ -167,7 +167,7 @@ function Home() {
                     alt="Membro 2"
                     className="rounded-full w-[15rem] h-[15rem] object-cover mx-auto"
                 />
-                <h3 className="text-xl font-semibold text-[var(--cor-azul)] text-center w-full">Wanessa</h3>
+                <h3 className="text-xl font-semibold text-[var(--cor-azul)] text-center w-full">Wanessa Marques</h3>
                 <p className="text-base text-gray-700 text-center w-full">
                     Arquiteta
                 </p>
@@ -179,7 +179,7 @@ function Home() {
                     alt="Membro 3"
                     className="rounded-full w-[15rem] h-[15rem] object-cover mx-auto"
                 />
-                <h3 className="text-xl font-semibold text-[var(--cor-azul)] text-center w-full">Membro 3</h3>
+                <h3 className="text-xl font-semibold text-[var(--cor-azul)] text-center w-full">Ana e Edelsio Araújo</h3>
                 <p className="text-base text-gray-700 text-center w-full">
                     Engenheiro Civil
                 </p>

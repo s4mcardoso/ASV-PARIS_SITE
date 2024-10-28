@@ -11,15 +11,15 @@ function Footer() {
           <a href="#" className="hover:text-yellow-500 font-poppins text-white">Home</a>
           <div className="flex flex-col">
             <h1 className="font-poppins text-white">Contato</h1>
-            <div className="text-sm text-gray-300">Telefone: (15) 91234-5678</div>
-            <div className="text-sm text-gray-300">E-mail: </div>
+            <div className="text-sm text-gray-300">Telefone Fixo: (15) 3142-3461</div>
+            <div className="text-sm text-gray-300">E-mail: asvpariseng@gmail.com</div>
           </div>
           <a href="#" className="hover:text-yellow-500 font-poppins text-white">Política de Privacidade</a>
         </nav>
 
         <div className="flex gap-2 items-center mb-10">
           <a
-            href={`https://wa.me/${0}`}
+            href={`https://wa.me/${5515988150433}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center w-8 h-8 bg-green-600 text-white rounded-full border-2 border-green-600 transition-colors duration-300 hover:bg-green-700"

@@ -1,6 +1,4 @@
-import Home from "../src/Pages/Home";
-import { HashRouter, Routes, Route, Link } from "react-router-dom";
-
+import Home from "./Components/Home";
 
 function App() {
   return (

@@ -74,8 +74,9 @@ htlm, body {
 }
 
 /* Adicione esta classe para aumentar a escala no hover */
-.member-box:hover {
-  transform: scale(1.1);
+.member-box{
+  transition: transform 0.3s ease; /* Define a transição suave */
 }
+
 
 

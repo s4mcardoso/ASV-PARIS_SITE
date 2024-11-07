@@ -77,24 +77,37 @@ function Home() {
             </Section>
 
             {/* About Section */}
-            <Section bgImage={imagemEngenharia4} overlayColor="bg-white" overlayOpacity={80}>
+            <Section
+                bgImage={imagemEngenharia4}
+                overlayColor="bg-white"
+                overlayOpacity={80}
+                style={{ backgroundImage: `url(${imagemEngenharia4})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+            >
                 <div className="flex flex-col items-start mt-4 mx-4 md:mx-8 z-10">
-                    <h2 className="text-4xl md:text-5xl font-bold text-left text-[var(--cor-azul)] whitespace-nowrap">Sobre</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold text-left text-[var(--cor-azul)] whitespace-nowrap">
+                        Sobre
+                    </h2>
                     <p className="text-left mt-4 text-base md:text-lg">
                         No mundo da construção civil, é comum encontrar inúmeros problemas que resultam em atrasos e frustrações...
                     </p>
                     <h3 className="font-semibold mt-4 text-[var(--cor-azul)]">Nossa Proposta:</h3>
-                    <p className="text-left mt-2 text-base md:text-lg">Diante desse cenário desafiador, decidimos criar a ASV PARIS...</p>
+                    <p className="text-left mt-2 text-base md:text-lg">
+                        Diante desse cenário desafiador, decidimos criar a ASV PARIS...
+                    </p>
                     <h3 className="font-semibold mt-4 text-[var(--cor-azul)]">Vantagens de Escolher a ASV PARIS:</h3>
                     <ol className="list-decimal list-inside mt-2">
-                        <li><strong className="text-[var(--cor-azul)]">Planejamento Integrado</strong></li>
-                        <li><strong className="text-[var(--cor-azul)]">Eficiência e Agilidade</strong></li>
-                        <li><strong className="text-[var(--cor-azul)]">Qualidade Superior</strong></li>
-                        <li><strong className="text-[var(--cor-azul)]">Tranquilidade para Você</strong></li>
+                        <li><strong className="text-[var(--cor-azul)]">Planejamento Integrado:</strong></li>
+                        <p className="text-black">Ao trabalharmos juntos desde o início, eliminamos a possibilidade de falhas de comunicação entre as diferentes especialidades, garantindo que todos os aspectos do projeto estejam alinhados.</p>
+                        <li><strong className="text-[var(--cor-azul)]">Eficiência e Agilidade:</strong></li>
+                        <p>A coordenação entre engenheiros civis, eletricistas e arquitetos reduz os atrasos e melhora a eficiência no cronograma de execução.</p>
+                        <li><strong className="text-[var(--cor-azul)]">Qualidade Superior:</strong></li>
+                        <p><p>Com uma equipe multidisciplinar, garantimos que cada detalhe do projeto seja pensado de forma holística, resultando em soluções de maior qualidade.</p></p>
+                        <li><strong className="text-[var(--cor-azul)]">Tranquilidade para Você:</strong></li>
+                        <p><p>Deixe os problemas conosco! Nossa abordagem integrada significa menos preocupações para você e um projeto mais fluido.</p></p>
                     </ol>
-                    <p className="text-left mt-4 text-base md:text-lg">Na ASV PARIS, nossa missão é acabar com os atrasos e complicações...</p>
                 </div>
             </Section>
+
 
             {/* Location Section */}
             <div className="relative flex flex-col min-h-screen bg-[var(--cor-branco)]">

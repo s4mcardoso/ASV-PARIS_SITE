@@ -4,20 +4,15 @@
 @tailwind utilities;
 
 :root {
-  --cor-azul: #003366;
-  /* Use para cabeçalhos, links e botões principais */
-  --cor-amarelo: #FFD700;
-  /* Ótimo para botões secundários e ícones */
-  --cor-amarelo-escuro: #ffd000;
-  /* Ótimo para botões secundários e ícones */
-  --cor-cinza-claro: #F5F5F5;
-  /* Ideal para o fundo do site */
-  --cor-branco: #FFFFFF;
-  /* Utilize para áreas de texto e espaços em branco */
+  --cor-azul: #003366;          /* Cabeçalhos, links e botões principais */
+  --cor-amarelo: #FFD700;       /* Botões secundários e ícones */
+  --cor-amarelo-escuro: #ffd000; /* Botões secundários e ícones */
+  --cor-cinza-claro: #F5F5F5;   /* Fundo do site */
+  --cor-branco: #FFFFFF;        /* Áreas de texto e espaços em branco */
 }
 
-
-htlm, body {
+/* Global Styles */
+html, body {
   background-color: var(--cor-cinza-claro);
   font-family: 'Poppins', sans-serif;
   height: 100%;
@@ -25,17 +20,29 @@ htlm, body {
   padding: 0;
 }
 
+body, html {
+  overflow-x: hidden !important;
+}
+
+@media (max-width: 786px) {
+  body, html {
+    overflow-x: hidden !important;
+  }
+}
+
 .custom-bg-blue {
-  background-color: #003366;
+  background-color: var(--cor-azul);
 }
 
 .custom-bg-yellow {
   background-color: var(--cor-amarelo);
 }
 
+/* Link Styling */
 .custom-link {
   position: relative;
-  /* Para que o ::after funcione corretamente */
+  color: var(--cor-branco) !important; /* Garante que a cor dos links seja branca */
+  transition: color 0.2s ease;
 }
 
 .custom-link::after {
@@ -44,39 +51,31 @@ htlm, body {
   left: 0;
   right: 0;
   bottom: -4px;
-  /* Ajuste a distância da linha para baixo */
   height: 3px;
-  /* Espessura da linha */
   background-color: var(--cor-amarelo);
-  /* Cor da linha */
   transform: scaleX(0);
-  /* Começa invisível */
   transition: transform 0.2s ease;
-  /* Transição suave */
+}
+
+.custom-link:hover {
+  color: var(--cor-amarelo) !important;
 }
 
 .custom-link:hover::after {
   transform: scaleX(1);
-  /* A linha aparece ao passar o mouse */
 }
 
-/* Para aplicar o hover no texto também */
-.custom-link:hover {
-  /* Adiciona o sublinhado ao passar o mouse */
-  color: var(--cor-amarelo) !important;
-  /* Cor do texto no hover */
-}
-
-
+/* Icon and Text Styling */
 .asv-paris-icon {
   @apply text-white;
-  font-family: 'Poppins', sans-serif
 }
 
-/* Adicione esta classe para aumentar a escala no hover */
-.member-box{
-  transition: transform 0.3s ease; /* Define a transição suave */
+/* Team Member Box Hover */
+.member-box {
+  transition: transform 0.3s ease;
 }
 
-
+.member-box:hover {
+  transform: scale(1.05);
+}
 

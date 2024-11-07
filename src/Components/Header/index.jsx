@@ -10,7 +10,7 @@ function Header() {
   };
 
   return (
-    <header className="w-full custom-bg-blue h-30 flex flex-col md:flex-row items-center justify-between p-4 ">
+    <header className="w-full custom-bg-blue h-30 flex flex-col md:flex-row items-center justify-between p-4">
       <div className="flex items-center mr-auto">
         <img className="w-12 h-auto mr-1" src={eiffelImage} alt="Torre Eiffel" />
         <span className="asv-paris-icon">
@@ -27,9 +27,9 @@ function Header() {
       </button>
 
       <nav className={`flex-col mt-12 md:mt-0 md:flex md:flex-row md:items-center gap-12 ${isOpen ? 'flex' : 'hidden'} md:flex items-center`}>
-        <a href="#home" className="custom-link text-lg font-poppins text-[var(--cor-branco)]">Home</a>
-        <a href="#sobre" className="custom-link text-lg font-poppins text-[var(--cor-branco)]">Sobre</a>
-        <a href="#equipe" className="custom-link text-lg font-poppins text-[var(--cor-branco)]">Equipe</a>
+        <a href="#home" className="custom-link text-lg font-poppins text-white">Home</a>
+        <a href="#sobre" className="custom-link text-lg font-poppins text-white">Sobre</a>
+        <a href="#equipe" className="custom-link text-lg font-poppins text-white">Equipe</a>
         <div className="flex gap-2 items-center">
           <a
             href={`https://wa.me/${5515988150433}`}
@@ -43,7 +43,7 @@ function Header() {
             href="https://www.instagram.com/asv.engenharia_?igsh=bDhiM3c3dm81ajB1"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center w-8 h-8 bg-[#bc2a8d] text-white rounded-full border-2 border-[#bc2a8d] transition-colors duration-300 hover:bg-[#8a3ab9] "
+            className="inline-flex items-center justify-center w-8 h-8 bg-[#bc2a8d] text-white rounded-full border-2 border-[#bc2a8d] transition-colors duration-300 hover:bg-[#8a3ab9]"
           >
             <FaInstagram className="w-5 h-5" />
           </a>
@@ -52,4 +52,5 @@ function Header() {
     </header>
   );
 }
+
 export default Header;

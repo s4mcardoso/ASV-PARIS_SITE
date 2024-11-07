@@ -1,8 +1,8 @@
-import { useState } from 'react';
+import { useState, memo } from 'react';
 import eiffelImage from '../../assets/eiffeltoweroriginal.png';
 import { FaWhatsapp, FaInstagram } from 'react-icons/fa';
 
-function Header() {
+const Header = memo(() => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -12,7 +12,7 @@ function Header() {
   return (
     <header className="w-full custom-bg-blue h-30 flex flex-col md:flex-row items-center justify-between p-4">
       <div className="flex items-center mr-auto">
-        <img className="w-12 h-auto mr-1" src={eiffelImage} alt="Torre Eiffel" />
+        <img className="w-12 h-auto mr-1" src={eiffelImage} alt="Torre Eiffel" loading="lazy" />
         <span className="asv-paris-icon">
           ASV PARIS<br />
           Engenharia Elétrica e Civil
@@ -51,6 +51,6 @@ function Header() {
       </nav>
     </header>
   );
-}
+});
 
 export default Header;

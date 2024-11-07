@@ -1,6 +1,7 @@
 import { FaWhatsapp, FaInstagram } from 'react-icons/fa';
+import { memo } from 'react';
 
-function Footer() {
+const Footer = memo(() => {
   return (
     <footer className="w-full custom-bg-blue p-4">
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
@@ -54,6 +55,6 @@ function Footer() {
       </div>
     </footer>
   );
-}
+});
 
 export default Footer;

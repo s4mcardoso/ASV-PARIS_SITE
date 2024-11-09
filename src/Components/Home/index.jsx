@@ -1,15 +1,14 @@
 import Footer from '../Footer';
 import Header from '../Header';
 import { FaWhatsapp } from 'react-icons/fa';
-import backgroundImage from '/Images/background-image.jpg';
-import andreTraçado from '/Images/andre-bonora-traçado-fino.png';
-import wanessaTraçada from '/Images/wanessa-arquiteta-traçado-fino.png';
-import asvParisLocation from '/Images/asvparis-localizacao.jpg';
-import casal from '/Images/casal.jpg';
-import wanessaEquipe from '/Images/wanessa-equipe.jpg';
-import andreEquipe from '/Images/andre-equipe.jpg';
-import imagemEngenharia4 from '/Images/imagem-engenharia4.jpg';
-
+import backgroundImage from '../../../public/Images/background-image.jpg';
+import andreTraçado from '../../../public/Images/andre-bonora-traçado-fino.png';
+import wanessaTraçada from '../../../public/Images/wanessa-arquiteta-traçado-fino.png';
+import asvParisLocation from '../../../public/Images/asvparis-localizacao.jpg';
+import casal from '../../../public/Images/casal.jpg';
+import wanessaEquipe from '../../../public/Images/wanessa-equipe.jpg';
+import andreEquipe from '../../../public/Images/andre-equipe.jpg';
+import imagemEngenharia4 from '../../../public/Images/imagem-engenharia4.jpg';
 
 const ContactButton = ({ href, children }) => (
     <a

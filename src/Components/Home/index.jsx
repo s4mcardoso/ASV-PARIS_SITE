@@ -61,8 +61,9 @@ function Home() {
                 </div>
             </div>
 
-            {/* Section 2 with Background Image */}
-            <Section bgImage={backgroundImage} overlayColor="bg-blue-900" overlayOpacity={70}>
+            {/* Equipe Section */}
+
+            <Section id="team-section" bgImage={backgroundImage} overlayColor="bg-blue-900" overlayOpacity={70}>
                 <div className="flex-shrink-0 mt-6 md:mt-0 order-1 lg:order-1">
                     <img src={wanessaTraçada} alt="Arquiteta Wanessa" className="hidden md:block w-full h-auto max-w-lg object-cover lg:ml-8 mt-[11.310rem]" />
                 </div>
@@ -78,6 +79,7 @@ function Home() {
 
             {/* About Section */}
             <Section
+                id = "about-section"
                 bgImage={imagemEngenharia4}
                 overlayColor="bg-white"
                 overlayOpacity={80}

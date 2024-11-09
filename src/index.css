@@ -18,15 +18,14 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-}
-
-body, html {
   overflow-x: hidden !important;
+  scroll-behavior: smooth;
 }
 
 @media (max-width: 786px) {
   body, html {
     overflow-x: hidden !important;
+    scroll-behavior: smooth;
   }
 }
 

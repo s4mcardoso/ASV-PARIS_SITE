@@ -8,7 +8,7 @@ import asvParisLocation from '../../../public/Images/asvparis-localizacao.jpg';
 import casal from '../../../public/Images/casal.jpg';
 import wanessaEquipe from '../../../public/Images/wanessa-equipe.jpg';
 import andreEquipe from '../../../public/Images/andre-equipe.jpg';
-import imagemEngenharia4 from '../../../public/Images/imagem-Engenharia4.jpg';
+import imagemEngenharia4 from '../../../public/Images/imagem-engenharia4.jpg';
 
 const ContactButton = ({ href, children }) => (
     <a

@@ -29,7 +29,7 @@ const Header = memo(() => {
       <nav className={`flex-col mt-12 md:mt-0 md:flex md:flex-row md:items-center gap-12 ${isOpen ? 'flex' : 'hidden'} md:flex items-center`}>
         <a href="#hero-section" className="custom-link text-lg font-poppins text-white">Home</a>
         <a href="#about-section" className="custom-link text-lg font-poppins text-white">Sobre</a>
-        <a href="#equipe" className="custom-link text-lg font-poppins text-white">Equipe</a>
+        <a href="#team-section" className="custom-link text-lg font-poppins text-white">Equipe</a>
         <div className="flex gap-2 items-center">
           <a
             href={`https://wa.me/${5515988150433}`}

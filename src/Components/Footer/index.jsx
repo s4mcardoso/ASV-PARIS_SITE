@@ -15,7 +15,7 @@ const Footer = memo(() => {
             <div className="text-sm text-gray-300">Telefone Fixo: (15) 3142-3461</div>
             <div className="text-sm text-gray-300">E-mail: asvpariseng@gmail.com</div>
           </div>
-          <a href="#" className="hover:text-yellow-500 font-poppins text-white">Política de Privacidade</a>
+          <a href="#privacy-policy" className="hover:text-yellow-500 font-poppins text-white">Política de Privacidade</a>
         </nav>
 
         <div className="flex gap-2 items-center mb-4 lg:mb-0">

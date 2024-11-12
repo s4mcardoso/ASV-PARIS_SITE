@@ -47,7 +47,7 @@ function Home() {
             {/* Hero Section */}
             <section id="hero-section" className="relative flex flex-col min-h-screen bg-[var(--cor-amarelo)]">
                 <div className="flex relative container mx-auto w-full h-screen items-center justify-between flex-col md:flex-row">
-                    <div className="flex flex-col justify-start items-start p-8 md:p-10 max-w-lg w-full gap-4 backdrop-blur-md rounded-lg shadow-lg bg-white z-20 order-2 lg:order-1">
+                    <div className="flex flex-col justify-start items-start p-8 md:p-10 max-w-lg w-full gap-4 backdrop-blur-md rounded-lg shadow-lg bg-white z-20 order-2 sm:mb-[5rem] md:mb-0 lg:order-1">
                         <h1 className="text-4xl md:text-6xl font-bold text-left text-[#003366]">Inove Seu Espaço Conosco</h1>
                         <p className="text-lg md:text-xl mt-2 text-left text-[#333333]">
                             Transforme seus sonhos em realidade com nossa experiência em arquitetura, engenharia elétrica e civil.
@@ -73,7 +73,7 @@ function Home() {
                         Em Sorocaba, SP, transformamos a visão em realidade. Oferecemos serviços superiores de engenharia elétrica, civil e arquitetura,
                         combinando inovação com excelência. Confie em quem entende de construção com precisão e paixão. Vamos construir juntos.
                     </p>
-                    <ContactButton href={`https://wa.me/155198150433`}>Fale Conosco</ContactButton>
+                    <ContactButton className="" href={`https://wa.me/155198150433`}>Fale Conosco</ContactButton>
                 </div>
             </Section>
 
@@ -84,28 +84,25 @@ function Home() {
                 overlayOpacity={80}
             >
                 <div id="about-section" className="flex flex-col items-start mt-4 mx-4 md:mx-8 z-10">
-                    <h2 className="text-4xl md:text-5xl font-bold text-left text-[var(--cor-azul)] whitespace-nowrap">
+                    <h2 className="font-bold text-[var(--cor-azul)] whitespace-nowrap text-left mt-4 sm:text-xs md:text-sm lg:text-4xl xl: mb-[5rem]">
                         Sobre
-                    </h2>
-                    <p className="text-left mt-4 text-base md:text-lg">
-                        No mundo da construção civil, é comum encontrar inúmeros problemas que resultam em atrasos e frustrações...
-                    </p>
-                    <h3 className="font-semibold mt-4 text-[var(--cor-azul)]">Nossa Proposta:</h3>
-                    <p className="text-left mt-2 text-base md:text-lg">
-                        Diante desse cenário desafiador, decidimos criar a ASV PARIS...
-                    </p>
-                    <h3 className="font-semibold mt-4 text-[var(--cor-azul)]">Vantagens de Escolher a ASV PARIS:</h3>
-                    <ol className="list-decimal list-inside mt-2">
-                        <li><strong className="text-[var(--cor-azul)]">Planejamento Integrado:</strong></li>
-                        <p className="text-black">Ao trabalharmos juntos desde o início, eliminamos a possibilidade de falhas de comunicação entre as diferentes especialidades, garantindo que todos os aspectos do projeto estejam alinhados.</p>
-                        <li><strong className="text-[var(--cor-azul)]">Eficiência e Agilidade:</strong></li>
-                        <p>A coordenação entre engenheiros civis, eletricistas e arquitetos reduz os atrasos e melhora a eficiência no cronograma de execução.</p>
-                        <li><strong className="text-[var(--cor-azul)]">Qualidade Superior:</strong></li>
-                        <p>Com uma equipe multidisciplinar, garantimos que cada detalhe do projeto seja pensado de forma holística, resultando em soluções de maior qualidade.</p>
-                        <li><strong className="text-[var(--cor-azul)]">Tranquilidade para Você:</strong></li>
-                        <p>Deixe os problemas conosco! Nossa abordagem integrada significa menos preocupações para você e um projeto mais fluido.</p>
+                    </h2>            
+                    <h3 className="text-left mt-4 sm:text-xs md:text-[8px] lg:text-base xl:text-lg">Porque escolher a ASV PARIS:</h3>
+                    <ol className="list-decimal list-inside mt-2 sm:text-[6px] md:text-[8px] lg:text-base xl:text-lg">
+                        <li><strong className="text-[var(--cor-azul)] sm:text-[6px] md:text-[8px] xl:text-lg">Planejamento Integrado:</strong></li>
+                        <p className="text-black sm:text-[6px] md:text-[8px] lg:text-base xl:text-lg">Ao trabalharmos juntos desde o início, eliminamos a possibilidade de falhas de comunicação entre as diferentes especialidades, garantindo que todos os aspectos do projeto estejam alinhados.</p>
+
+                        <li><strong className="text-[var(--cor-azul)] sm:text-[6px] md:text-[8px] xl:text-lg">Eficiência e Agilidade:</strong></li>
+                        <p className="sm:text-[6px] md:text-[8px] lg:text-base xl:text-lg">A coordenação entre engenheiros civis, eletricistas e arquitetos reduz os atrasos e melhora a eficiência no cronograma de execução.</p>
+
+                        <li><strong className="text-[var(--cor-azul)] sm:text-[6px] md:text-[8px] xl:text-lg">Qualidade Superior:</strong></li>
+                        <p className="sm:text-[6px] md:text-[8px] lg:text-base xl:text-lg">Com uma equipe multidisciplinar, garantimos que cada detalhe do projeto seja pensado de forma holística, resultando em soluções de maior qualidade.</p>
+
+                        <li><strong className="text-[var(--cor-azul)] sm:text-[6px] md:text-[8px] xl:text-lg">Tranquilidade para Você:</strong></li>
+                        <p className="sm:text-[6px] md:text-[8px] lg:text-base xl:text-lg">Deixe os problemas conosco! Nossa abordagem integrada significa menos preocupações para você e um projeto mais fluido.</p>
                     </ol>
                 </div>
+
             </Section>
 
             {/* Location Section */}
@@ -121,8 +118,12 @@ function Home() {
                             transformar seu projeto em realidade.
                         </p>
                     </div>
-                    <div className="flex-shrink-0 mt-12 md:mt-16 lg:h-auto w-[20rem] ml-auto">
-                        <img src={asvParisLocation} alt="Localização da ASV PARIS" className="rounded-lg shadow-lg w-full h-auto max-w-lg object-cover" />
+                    <div className="flex-shrink-0 relative bottom-[4rem] md:top-8 w-full sm:w-[20rem] md:w-[25rem] lg:w-[30rem] xl:w-[20rem] mx-auto xl: left-[15rem]">
+                        <img
+                            src={asvParisLocation}
+                            alt="Localização da ASV PARIS"
+                            className="rounded-lg shadow-lg w-full h-auto max-w-full object-cover"
+                        />
                     </div>
                 </div>
             </div>

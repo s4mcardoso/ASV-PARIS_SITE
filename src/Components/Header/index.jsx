@@ -20,7 +20,10 @@ const Header = memo(() => {
       </div>
 
       {/* Botão de Menu para dispositivos móveis */}
-      <button onClick={toggleMenu} className="lg:hidden md:hidden p-4 focus:outline-none bg-white rounded-md shadow-md absolute right-0 top-4">
+      <button
+        onClick={toggleMenu}
+        className="lg:hidden md:hidden p-4 focus:outline-none bg-white rounded-md shadow-md absolute right-0 top-4 md:top-4 fixed md:relative"
+      >
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
         </svg>

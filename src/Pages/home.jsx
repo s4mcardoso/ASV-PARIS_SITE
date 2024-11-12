@@ -9,6 +9,7 @@ import casal from '../../public/Images/casal.jpg';
 import wanessaEquipe from '../../public/Images/wanessa-equipe.jpg';
 import andreEquipe from '../../public/Images/andre-equipe.jpg';
 import imagemEngenharia4 from '../../public/Images/imagem-engenharia4.jpg';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ContactButton = ({ href, children }) => (
     <a
@@ -23,7 +24,7 @@ const ContactButton = ({ href, children }) => (
 
 const TeamMember = ({ imgSrc, name, title }) => (
     <div className="flex flex-col justify-start items-center p-4 w-full sm:w-[20rem] md:w-[18rem] gap-3 rounded-lg shadow-lg bg-gradient-to-br from-yellow-400 to-yellow-300 transition-transform transform hover:scale-110">
-        <img src={imgSrc} alt={`Membro ${name}`} className="rounded-full w-[12rem] h-[12rem] object-cover" />
+        <LazyLoadImage img src={imgSrc} alt={`Membro ${name}`} className="rounded-full w-[12rem] h-[12rem] object-cover" />
         <h3 className="text-xl font-semibold text-[var(--cor-azul)] text-center">{name}</h3>
         <p className="text-base text-gray-700 text-center">{title}</p>
     </div>

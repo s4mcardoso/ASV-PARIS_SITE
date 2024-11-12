@@ -8,32 +8,31 @@ const Footer = memo(() => {
         <div className="flex items-center p-2">
           {/* Conteúdo opcional */}
         </div>
-        <nav className="flex flex-col lg:flex-row gap-4 mt-2 lg:mt-0 text-xl">
-          <a href="#" className="hover:text-yellow-500 font-poppins text-white">Home</a>
-          <div className="flex flex-col">
+        <nav className="flex flex-col lg:flex-row gap-4 mt-2 lg:mt-0 text-xl w-full items-start">
+          <div className="flex flex-col items-start w-full">
             <h1 className="font-poppins text-white">Contato</h1>
             <div className="text-sm text-gray-300">Telefone Fixo: (15) 3142-3461</div>
             <div className="text-sm text-gray-300">E-mail: asvpariseng@gmail.com</div>
           </div>
-          <a href="#privacy-policy" className="hover:text-yellow-500 font-poppins text-white">Política de Privacidade</a>
+          <a href="#privacy-policy" className="hover:text-yellow-500 font-poppins text-white w-full">Política de Privacidade</a>
         </nav>
 
-        <div className="flex gap-2 items-center mb-4 lg:mb-0">
+        <div className="flex gap-2 items-center mb-4 lg:mb-11">
           <a
             href={`https://wa.me/${5515988150433}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center w-8 h-8 bg-green-600 text-white rounded-full border-2 border-green-600 transition-colors duration-300 hover:bg-green-700"
+            className="inline-flex items-center justify-center w-10 h-10 bg-green-600 text-white rounded-full border-2 border-green-600 transition-colors duration-300 hover:bg-green-700"
           >
-            <FaWhatsapp className="w-5 h-5" />
+            <FaWhatsapp className="w-6 h-6" />
           </a>
           <a
             href="https://www.instagram.com/asv.engenharia_?igsh=bDhiM3c3dm81ajB1"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center w-8 h-8 bg-[#bc2a8d] text-white rounded-full border-2 border-[#bc2a8d] transition-colors duration-300 hover:bg-[#8a3ab9]"
+            className="inline-flex items-center justify-center w-10 h-10 bg-[#bc2a8d] text-white rounded-full border-2 border-[#bc2a8d] transition-colors duration-300 hover:bg-[#8a3ab9]"
           >
-            <FaInstagram className="w-5 h-5" />
+            <FaInstagram className="w-6 h-6" />
           </a>
         </div>
       </div>

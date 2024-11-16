@@ -1,4 +1,4 @@
-import { useState, memo } from 'react';
+import React, { useState, memo } from 'react';
 import eiffelImage from '../../assets/eiffeltoweroriginal.png';
 import { FaWhatsapp, FaInstagram } from 'react-icons/fa';
 
@@ -7,6 +7,11 @@ const Header = memo(() => {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const smoothScroll = (targetId) => {
+    const targetElement = document.getElementById(targetId);
+    targetElement.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -30,9 +35,9 @@ const Header = memo(() => {
       </button>
 
       <nav className={`flex-col mt-12 md:mt-0 md:flex md:flex-row md:items-center gap-12 ${isOpen ? 'flex' : 'hidden'} md:flex items-center`}>
-        <a href="#hero-section" className="custom-link text-lg font-poppins text-white">Início</a>
-        <a href="#about-section" className="custom-link text-lg font-poppins text-white">Sobre</a>
-        <a href="#team-section" className="custom-link text-lg font-poppins text-white">Equipe</a>
+        <button onClick={() => smoothScroll('hero-section')} className="custom-link text-lg font-poppins text-white">Início</button>
+        <button onClick={() => smoothScroll('about-section')} className="custom-link text-lg font-poppins text-white">Sobre</button>
+        <button onClick={() => smoothScroll('team-section')} className="custom-link text-lg font-poppins text-white">Equipe</button>
         <div className="flex gap-2 items-center">
           <a
             href={`https://wa.me/${5515988150433}`}

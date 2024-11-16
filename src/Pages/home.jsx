@@ -24,10 +24,10 @@ const ContactButton = ({ href, children }) => (
 
 const TeamMember = ({ imgSrc, name, title }) => (
     <div className="flex flex-col justify-start items-center p-4 w-full sm:w-[10rem] lg:w-[20rem] gap-3 rounded-lg shadow-lg bg-gradient-to-br from-yellow-400 to-yellow-300 transition-transform transform hover:scale-110">
-        <LazyLoadImage 
-            src={imgSrc} 
-            alt={`Membro ${name}`} 
-            className="rounded-full w-[6rem] h-[6rem] sm:w-[6rem] sm:h-[6rem] lg:w-[12rem] lg:h-[12rem] object-cover" 
+        <LazyLoadImage
+            src={imgSrc}
+            alt={`Membro ${name}`}
+            className="rounded-full w-[6rem] h-[6rem] sm:w-[6rem] sm:h-[6rem] lg:w-[12rem] lg:h-[12rem] object-cover"
         />
         <h3 className="text-xl font-semibold text-[var(--cor-azul)] text-center">{name}</h3>
         <p className="text-base text-gray-700 text-center">{title}</p>
@@ -52,7 +52,7 @@ function Home() {
             {/* Hero Section */}
             <section id="hero-section" className="relative flex flex-col min-h-screen bg-[var(--cor-amarelo)]">
                 <div className="flex relative container mx-auto w-full h-screen items-center justify-between flex-col md:flex-row">
-                <div className="flex flex-col justify-start items-start p-8 max-w-lg w-full gap-4 backdrop-blur-md rounded-lg shadow-lg bg-white z-20 order-2 lg:order-1 mb-[16rem] sm:mb-10 lg:ml-[2rem]">
+                    <div className="flex flex-col justify-start items-start p-8 max-w-lg w-full gap-4 backdrop-blur-md rounded-lg shadow-lg bg-white z-20 order-2 lg:order-1 mb-[16rem] sm:mb-10 lg:ml-[2rem]">
 
                         <h1 className="text-4xl font-bold text-left text-[#003366]">Inove Seu Espaço Conosco</h1>
                         <p className="text-lg md:text-xl mt-2 text-left text-[#333333]">
@@ -140,7 +140,11 @@ function Home() {
 
             {/* Equipe */}
             <section id="team-section" className="h-screen w-full bg-[var(--cor-branco)] py-16">
-                <h2 className="text-center text-4xl font-bold text-[var(--cor-azul)] mb-20">Conheça Nossa Equipe</h2>
+                <div className="flex justify-center items-center mb-20">
+                    <h2 className="text-center text-4xl font-bold text-[var(--cor-azul)] border-b-4 border-[var(--cor-azul)] inline-block pb-2">
+                        Conheça Nossa Equipe
+                    </h2>
+                </div>
                 <div className="flex flex-wrap justify-center gap-8">
                     <TeamMember imgSrc={andreEquipe} name="André Bonora" title="Engenheiro Eletricista" />
                     <TeamMember imgSrc={wanessaEquipe} name="Wanessa Almeida" title="Arquiteta" />

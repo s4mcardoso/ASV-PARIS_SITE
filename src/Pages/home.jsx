@@ -139,7 +139,7 @@ function Home() {
             </div>
 
             {/* Equipe */}
-            <section id="team-section" className="h-screen w-full bg-[#F0F0F0] py-16">
+            <section id="team-section" className="h-screen w-full bg-[var(--cor-branco)] py-16">
                 <h2 className="text-center text-4xl font-bold text-[var(--cor-azul)] mb-20">Conheça Nossa Equipe</h2>
                 <div className="flex flex-wrap justify-center gap-8">
                     <TeamMember imgSrc={andreEquipe} name="André Bonora" title="Engenheiro Eletricista" />

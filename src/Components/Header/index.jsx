@@ -10,7 +10,7 @@ const Header = memo(() => {
   };
 
   return (
-    <header className="w-full custom-bg-blue h-30 flex flex-col md:flex-row items-center justify-between p-4">
+    <header className="w-full custom-bg-blue h-30 flex flex-col md:flex-row items-center justify-between p-4 relative">
       <div className="flex items-center mr-auto">
         <img className="w-12 h-auto mr-1" src={eiffelImage} alt="Torre Eiffel" loading="lazy" />
         <span className="asv-paris-icon">
@@ -22,7 +22,7 @@ const Header = memo(() => {
       {/* Botão de Menu para dispositivos móveis */}
       <button
         onClick={toggleMenu}
-        className="lg:hidden md:hidden p-4 focus:outline-none bg-white rounded-md shadow-md absolute right-0 top-4 md:top-4 fixed md:relative"
+        className="lg:hidden md:hidden p-4 focus:outline-none bg-white rounded-md shadow-md absolute top-4 right-4"
       >
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />

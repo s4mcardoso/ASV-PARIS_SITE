@@ -60,7 +60,7 @@ function Home() {
                             Em Sorocaba e região, oferecemos soluções integradas em um só lugar, garantindo qualidade e inovação em cada projeto.
                             Deixe-nos criar o espaço perfeito para você!
                         </p>
-                        <ContactButton href={`https://wa.me/155198150433`}>Contato</ContactButton>
+                        <ContactButton href={`https://wa.me/15988150433`}>Contato</ContactButton>
                     </div>
                     <div className="flex-shrink-0 md:mt-0 order-1 lg:order-2 lg:mt-[7rem]">
                         <img src={andreTraçado} alt="Engenheiro André" className="hidden md:block w-full h-auto max-w-lg object-cover md:mr-8" />
@@ -83,7 +83,7 @@ function Home() {
                         Em Sorocaba, SP, transformamos a visão em realidade. Oferecemos serviços superiores de engenharia elétrica, civil e arquitetura,
                         combinando inovação com excelência. Confie em quem entende de construção com precisão e paixão. Vamos construir juntos.
                     </p>
-                    <ContactButton className="" href={`https://wa.me/155198150433`}>Fale Conosco</ContactButton>
+                    <ContactButton className="" href={`https://wa.me/15988150433`}>Fale Conosco</ContactButton>
                 </div>
             </Section>
 

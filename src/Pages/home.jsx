@@ -83,7 +83,7 @@ function Home() {
                         Em Sorocaba, SP, transformamos a visão em realidade. Oferecemos serviços superiores de engenharia elétrica, civil e arquitetura,
                         combinando inovação com excelência. Confie em quem entende de construção com precisão e paixão. Vamos construir juntos.
                     </p>
-                    <ContactButton className="" href={`https://wa.me/15988150433`}>Fale Conosco</ContactButton>
+                    <ContactButton className="" href={`https://wa.me/5515988150433`}>Fale Conosco</ContactButton>
                 </div>
             </Section>
 

@@ -73,7 +73,7 @@ function Home() {
                     <img
                         src={wanessaTraçada}
                         alt="Arquiteta Wanessa"
-                        className="hidden md:block w-full h-auto max-w-lg object-cover lg:ml-8 lg:mt-[19.4rem] xl:ml-16 xl:mb-[8rem]"
+                        className="hidden md:block w-full h-auto max-w-lg object-cover lg:ml-8 lg:mt-[17.1rem] xl:ml-16 xl:mb-[8rem]"
                     />
                 </div>
                 <div className="flex flex-col justify-start items-start p-8 md:p-10 max-w-lg w-full gap-4 backdrop-blur-md rounded-lg shadow-lg bg-white z-20 ml-auto order-2 lg:order-2 lg:mr-[2rem]">

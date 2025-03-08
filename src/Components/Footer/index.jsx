@@ -3,7 +3,7 @@ import { memo } from 'react';
 
 const Footer = memo(() => {
   return (
-    <footer className="w-full custom-bg-blue p-4">
+    <footer className="w-full custom-bg-blue py-2 px-4"> {/* Reduzido padding vertical */}
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
         <div className="flex items-center p-2">
           {/* Conteúdo opcional */}
@@ -16,7 +16,7 @@ const Footer = memo(() => {
           </div>
         </nav>
 
-        <div className="flex gap-2 items-center mb-4 lg:mb-11">
+        <div className="flex gap-2 items-center mb-4 lg:mb-6"> {/* Reduzido margin-bottom */}
           <a
             href={`https://wa.me/${5515988150433}`}
             target="_blank"
@@ -42,13 +42,13 @@ const Footer = memo(() => {
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.153425526579!2d-47.5153313254411!3d-23.49098265900891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5f4b9881029a7%3A0x6c4b8be28a23c763!2sAv.%20Elias%20Maluf%2C%202067%20-%20Wanel%20Ville%2C%20Sorocaba%20-%20SP%2C%2018055-215!5e0!3m2!1spt-BR!2sbr!4v1729847116727!5m2!1spt-BR!2sbr"
               width="100%"
-              height="225"
+              height="150" // Reduzido de 225 para 150
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
             />
           </div>
-          <p className="mt-[2rem]">&copy; 2024 ASV PARIS | Todos os direitos reservados.</p>
+          <p className="mt-4">&copy; 2024 ASV PARIS | Todos os direitos reservados.</p> {/* Reduzido margin-top */}
         </div>
       </div>
     </footer>

@@ -147,8 +147,8 @@ function Home() {
                 </div>
                 <div className="flex flex-wrap justify-center gap-8">
                     <TeamMember imgSrc={andreEquipe} name="André Bonora" title="Engenheiro Eletricista" />
-                    <TeamMember imgSrc={wanessaEquipe} name="Wanessa Almeida" title="Arquiteta" />
-                    <TeamMember imgSrc={casal} name="Equipe ASV PARIS" title="Especialistas em Engenharia e Arquitetura" />
+                    <TeamMember imgSrc={wanessaEquipe} name="Vanessa Marques" title="Arquiteta" />
+                    <TeamMember imgSrc={casal} name="Edelcio de Araujo e Ana Carolina de Lima" title="Especialistas em Engenharia e Arquitetura" />
                 </div>
             </section>
 

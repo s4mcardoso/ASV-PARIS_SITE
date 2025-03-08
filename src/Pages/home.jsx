@@ -26,14 +26,14 @@ const ContactButton = ({ href, children }) => (
 );
 
 const TeamMember = ({ imgSrc, name, title }) => (
-    <div className="flex flex-col justify-start items-center p-4 w-full sm:w-[10rem] lg:w-[20rem] gap-3 rounded-lg shadow-lg bg-gradient-to-br from-yellow-400 to-yellow-300 transition-transform transform hover:scale-110">
+    <div className="flex flex-col items-center p-2 sm:p-4 w-48 sm:w-64 md:w-80 lg:w-96 gap-3 rounded-lg shadow-lg bg-gradient-to-br from-yellow-400 to-yellow-300 transition-transform hover:scale-105">
         <LazyLoadImage
             src={imgSrc}
             alt={`Membro ${name}`}
-            className="rounded-full w-[6rem] h-[6rem] sm:w-[6rem] sm:h-[6rem] lg:w-[12rem] lg:h-[12rem] object-cover"
+            className="rounded-full w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cover shadow-md"
         />
-        <h3 className="text-xl font-semibold text-[var(--cor-azul)] text-center">{name}</h3>
-        <p className="text-base text-gray-700 text-center">{title}</p>
+        <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-[var(--cor-azul)] text-center">{name}</h3>
+        <p className="text-xs sm:text-sm md:text-base text-gray-700 text-center">{title}</p>
     </div>
 );
 

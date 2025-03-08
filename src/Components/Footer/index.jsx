@@ -42,7 +42,7 @@ const Footer = memo(() => {
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.153425526579!2d-47.5153313254411!3d-23.49098265900891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5f4b9881029a7%3A0x6c4b8be28a23c763!2sAv.%20Elias%20Maluf%2C%202067%20-%20Wanel%20Ville%2C%20Sorocaba%20-%20SP%2C%2018055-215!5e0!3m2!1spt-BR!2sbr!4v1729847116727!5m2!1spt-BR!2sbr"
               width="100%"
-              height="150" // Reduzido de 225 para 150
+              height="100" // Reduzido de 225 para 150
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"

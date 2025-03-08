@@ -1,15 +1,18 @@
 import Footer from '../Components/Footer';
 import Header from '../Components/Header';
 import { FaWhatsapp } from 'react-icons/fa';
-import backgroundImage from '../../public/Images/background-image.jpg';
-import andreTraçado from '../../public/Images/andre-bonora-traçado-fino.png';
-import wanessaTraçada from '../../public/Images/wanessa-arquiteta-traçado-fino.png';
-import asvParisLocation from '../../public/Images/asvparis-localizacao.jpg';
-import casal from '../../public/Images/casal.jpg';
-import wanessaEquipe from '../../public/Images/wanessa-equipe.jpg';
-import andreEquipe from '../../public/Images/andre-equipe.jpg';
-import imagemEngenharia4 from '../../public/Images/imagem-engenharia4.jpg';
 import { LazyLoadImage } from "react-lazy-load-image-component";
+
+// Remova TODOS os imports de imagens da pasta public
+// Substitua por caminhos absolutos:
+const backgroundImage = '/Images/background-image.jpg';
+const andreTraçado = '/Images/andre-bonora-traçado-fino.png';
+const wanessaTraçada = '/Images/wanessa-arquiteta-traçado-fino.png';
+const asvParisLocation = '/Images/asvparis-localizacao.jpg';
+const casal = '/Images/casal.jpg';
+const wanessaEquipe = '/Images/wanessa-equipe.jpg';
+const andreEquipe = '/Images/andre-equipe.jpg';
+const imagemEngenharia4 = '/Images/imagem-engenharia4.jpg';
 
 const ContactButton = ({ href, children }) => (
     <a
@@ -34,7 +37,6 @@ const TeamMember = ({ imgSrc, name, title }) => (
     </div>
 );
 
-
 const Section = ({ bgImage, overlayColor, overlayOpacity, children }) => (
     <div className="relative flex flex-col min-h-screen bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${bgImage})` }}>
         <div className={`absolute inset-0 ${overlayColor}`} style={{ opacity: overlayOpacity / 100 }}></div>
@@ -48,12 +50,10 @@ function Home() {
     return (
         <>
             <Header />
-
             {/* Hero Section */}
             <section id="hero-section" className="relative flex flex-col min-h-screen bg-[var(--cor-amarelo)]">
                 <div className="flex relative container mx-auto w-full h-screen items-center justify-between flex-col md:flex-row">
                     <div className="flex flex-col justify-start items-start p-8 max-w-lg w-full gap-4 backdrop-blur-md rounded-lg shadow-lg bg-white z-20 order-2 lg:order-1 mb-[16rem] sm:mb-10 lg:ml-[2rem]">
-
                         <h1 className="text-4xl font-bold text-left text-[#003366]">Inove Seu Espaço Conosco</h1>
                         <p className="text-lg md:text-xl mt-2 text-left text-[#333333]">
                             Transforme seus sonhos em realidade com nossa experiência em arquitetura, engenharia elétrica e civil.
@@ -67,14 +67,13 @@ function Home() {
                     </div>
                 </div>
             </section>
-
             {/* Construa com Nossa Equipe */}
             <Section bgImage={backgroundImage} overlayColor="bg-blue-900" overlayOpacity={70}>
                 <div className="flex-shrink-0 mt-6 md:mt-0 order-1 lg:order-1">
                     <img
                         src={wanessaTraçada}
                         alt="Arquiteta Wanessa"
-                        className="hidden md:block w-full h-auto max-w-lg object-cover lg:ml-8 lg:mt-[17.19rem] xl:ml-16 xl:mb-[8rem]"
+                        className="hidden md:block w-full h-auto max-w-lg object-cover lg:ml-8 lg:mt-[17.185rem] xl:ml-16 xl:mb-[8rem]"
                     />
                 </div>
                 <div className="flex flex-col justify-start items-start p-8 md:p-10 max-w-lg w-full gap-4 backdrop-blur-md rounded-lg shadow-lg bg-white z-20 ml-auto order-2 lg:order-2 lg:mr-[2rem]">
@@ -86,7 +85,6 @@ function Home() {
                     <ContactButton className="" href={`https://wa.me/5515988150433`}>Fale Conosco</ContactButton>
                 </div>
             </Section>
-
             {/* About Section */}
             <Section
                 bgImage={imagemEngenharia4}
@@ -101,20 +99,15 @@ function Home() {
                     <ol className="list-decimal list-inside mt-2 sm:text-[6px] md:text-[8px] lg:text-2xl xl:text-lg">
                         <li><strong className="text-[var(--cor-azul)] sm:text-[6px] md:text-[8px] lg:text-lg xl:text-lg">Planejamento Integrado:</strong></li>
                         <p className="text-black sm:text-[6px] md:text-[8px] lg:text-lg xl:text-lg">Ao trabalharmos juntos desde o início, eliminamos a possibilidade de falhas de comunicação entre as diferentes especialidades, garantindo que todos os aspectos do projeto estejam alinhados.</p>
-
                         <li><strong className="text-[var(--cor-azul)] sm:text-[6px] md:text-[8px] xl:text-lg lg:text-lg ">Eficiência e Agilidade:</strong></li>
                         <p className="sm:text-[6px] md:text-[8px] xl:text-lg lg:text-lg ">A coordenação entre engenheiros civis, eletricistas e arquitetos reduz os atrasos e melhora a eficiência no cronograma de execução.</p>
-
                         <li><strong className="text-[var(--cor-azul)] sm:text-[6px] md:text-[8px] xl:text-lg lg:text-lg ">Qualidade Superior:</strong></li>
                         <p className="sm:text-[6px] md:text-[8px] lg:text-lg xl:text-lg">Com uma equipe multidisciplinar, garantimos que cada detalhe do projeto seja pensado de forma holística, resultando em soluções de maior qualidade.</p>
-
                         <li><strong className="text-[var(--cor-azul)] sm:text-[6px] md:text-[8px] xl:text-lg lg:text-lg ">Tranquilidade para Você:</strong></li>
                         <p className="sm:text-[6px] md:text-[8px] lg:text-lg xl:text-lg">Deixe os problemas conosco! Nossa abordagem integrada significa menos preocupações para você e um projeto mais fluido.</p>
                     </ol>
                 </div>
-
             </Section>
-
             {/* Location Section */}
             <div className="relative flex flex-col min-h-screen bg-[var(--cor-branco)]">
                 <div className="flex relative container mx-auto w-full h-screen items-center justify-between z-10 flex-col md:flex-row">
@@ -137,7 +130,6 @@ function Home() {
                     </div>
                 </div>
             </div>
-
             {/* Equipe */}
             <section id="team-section" className="h-screen w-full bg-[var(--cor-branco)] py-16">
                 <div className="flex justify-center items-center mb-20">
@@ -151,7 +143,6 @@ function Home() {
                     <TeamMember imgSrc={casal} name="Edelcio de Araujo e Ana Carolina de Lima" title="Especialistas em Engenharia e Arquitetura" />
                 </div>
             </section>
-
             <Footer />
         </>
     );

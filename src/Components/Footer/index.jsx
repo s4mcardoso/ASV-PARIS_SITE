@@ -3,22 +3,12 @@ import { memo } from 'react';
 
 const Footer = memo(() => {
   return (
-    <footer className="w-full custom-bg-blue py-2 px-4"> {/* Reduzido padding vertical */}
-      <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
-        <div className="flex items-center p-2">
-          {/* Conteúdo opcional */}
-        </div>
-        <nav className="flex flex-col lg:flex-row gap-4 mt-2 lg:mt-0 text-xl w-full items-start">
-          <div className="flex flex-col items-start w-full">
-            <h1 className="font-poppins text-white">Contato</h1>
-            <div className="text-sm text-gray-300">Telefone Fixo: (15) 3142-3461</div>
-            <div className="text-sm text-gray-300">E-mail: asvpariseng@gmail.com</div>
-          </div>
-        </nav>
-
-        <div className="flex gap-2 items-center mb-4 lg:mb-6"> {/* Reduzido margin-bottom */}
+    <footer className="w-full custom-bg-blue py-2 px-4">
+      <div className="container mx-auto flex flex-col lg:flex-row items-start sm:items-center justify-between">
+        {/* Ícones (primeiro no mobile) */}
+        <div className="flex gap-2 items-center mb-4 lg:mb-6 order-1 sm:order-1 md:order-1 lg:order-2 ml-4 sm:ml-0">
           <a
-            href={`https://wa.me/${5515988150433}`}
+            href={`https://wa.me/5515988150433`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center w-10 h-10 bg-green-600 text-white rounded-full border-2 border-green-600 transition-colors duration-300 hover:bg-green-700"
@@ -34,21 +24,35 @@ const Footer = memo(() => {
             <FaInstagram className="w-6 h-6" />
           </a>
         </div>
+
+        {/* Informações de Contato (segundo no mobile) */}
+        <nav className="flex flex-col lg:flex-row gap-4 mt-2 lg:mt-0 text-xl w-full items-start order-2 sm:order-2 md:order-2 lg:order-1">
+          <div className="flex flex-col items-start w-full">
+            <h1 className="font-poppins text-white">Contato</h1>
+            <div className="text-sm text-gray-300">Telefone Fixo: (15) 3142-3461</div>
+            <div className="text-sm text-gray-300">E-mail: asvpariseng@gmail.com</div>
+          </div>
+        </nav>
+
+        {/* Div vazia (oculta em mobile) */}
+        <div className="hidden lg:flex items-center p-2 order-3">
+          {/* Conteúdo opcional */}
+        </div>
       </div>
+      {/* Mapa e copyright */}
       <div className="text-center text-white mt-4">
-        {/* Seção Como Chegar */}
         <div className="relative flex flex-col p-4">
           <div className="flex justify-center">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.153425526579!2d-47.5153313254411!3d-23.49098265900891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5f4b9881029a7%3A0x6c4b8be28a23c763!2sAv.%20Elias%20Maluf%2C%202067%20-%20Wanel%20Ville%2C%20Sorocaba%20-%20SP%2C%2018055-215!5e0!3m2!1spt-BR!2sbr!4v1729847116727!5m2!1spt-BR!2sbr"
               width="100%"
-              height="100" // Reduzido de 225 para 150
+              height="100" // Reduzido para mobile
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
             />
           </div>
-          <p className="mt-4">&copy; 2024 ASV PARIS | Todos os direitos reservados.</p> {/* Reduzido margin-top */}
+          <p className="mt-4">&copy; 2024 ASV PARIS | Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

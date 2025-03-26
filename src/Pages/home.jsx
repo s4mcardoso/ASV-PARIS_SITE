@@ -121,7 +121,7 @@ function Home() {
                             transformar seu projeto em realidade.
                         </p>
                     </div>
-                    <div className="bottom-[10rem] flex-shrink-0 relative w-[50%] sm:w-[10%] md:w-[25rem] lg:w-[19rem] lg:mt-[33rem] lg:mr-[10rem] xl:w-[20rem] mx-auto xl:left-[2rem] xl:bottom-[12rem]">
+                    <div className="bottom-[10rem] flex-shrink-0 relative w-[50%] sm:w-[10%] md:w-[25rem] lg:w-[19rem] lg:mt-[33rem] lg:mr-[28rem] xl:w-[20rem] mx-auto xl:left-[2rem] xl:bottom-[12rem]">
                         <img
                             src={asvParisLocation}
                             alt="Localização da ASV PARIS"

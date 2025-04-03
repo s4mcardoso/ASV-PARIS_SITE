@@ -3,8 +3,6 @@ import Header from '../Components/Header';
 import { FaWhatsapp } from 'react-icons/fa';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-// Remova TODOS os imports de imagens da pasta public
-// Substitua por caminhos absolutos:
 const backgroundImage = '/Images/background-image.jpg';
 const andreTraçado = '/Images/andre-bonora-traçado-fino.png';
 const wanessaTraçada = '/Images/wanessa-arquiteta-traçado-fino.png';
@@ -26,7 +24,7 @@ const ContactButton = ({ href, children }) => (
 );
 
 const TeamMember = ({ imgSrc, name, title }) => (
-    <div className="flex flex-col items-center p-2 sm:p-4 w-48 sm:w-64 md:w-80 lg:w-96 gap-3 rounded-lg shadow-lg bg-gradient-to-br from-yellow-400 to-yellow-300 transition-transform hover:scale-105">
+    <div className="flex flex-col items-center p-4 sm:p-6 md:p-8 lg:p-10 w-48 sm:w-64 md:w-80 lg:w-96 gap-3 rounded-lg shadow-lg bg-gradient-to-br from-yellow-400 to-yellow-300 transition-transform hover:scale-105">
         <LazyLoadImage
             src={imgSrc}
             alt={`Membro ${name}`}
@@ -110,9 +108,10 @@ function Home() {
             </Section>
             {/* Location Section */}
             <div className="relative flex flex-col min-h-screen bg-[var(--cor-branco)]">
-                <div className="flex relative container mx-auto w-full h-screen items-center justify-between z-10 flex-col md:flex-row">
-                    <div className="flex flex-col justify-start items-start p-6 max-w-md w-full mb-12 gap-3 text-3xl sm:text-4xl  md:text-5xl lg:text-6xl lg:mb-[10rem] xl:mb-[10rem]">
-                        <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-left text-[var(--cor-azul)] whitespace-nowrap">
+                <div className="flex flex-col md:flex-row container mx-auto w-full h-screen items-center justify-between z-10 px-6">
+                    {/* Texto */}
+                    <div className="flex flex-col justify-start items-start max-w-md w-full mb-12 gap-3 text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+                        <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-left text-[var(--cor-azul)]">
                             Serviços de Engenharia <br /> e Arquitetura em Sorocaba
                         </h1>
                         <p className="text-lg mt-2 text-left text-[var(--cor-amarelo-escuro)] md:text-xl lg:text-2xl">
@@ -121,28 +120,33 @@ function Home() {
                             transformar seu projeto em realidade.
                         </p>
                     </div>
-                    <div className="bottom-[10rem] flex-shrink-0 relative w-[50%] sm:w-[10%] md:w-[25rem] lg:w-[19rem] lg:mt-[33rem] lg:mr-[28rem] xl:w-[20rem] mx-auto xl:left-[2rem] xl:bottom-[12rem]">
+
+                    {/* Imagem */}
+                    <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 mx-auto">
                         <img
                             src={asvParisLocation}
                             alt="Localização da ASV PARIS"
-                            className="rounded-lg shadow-lg w-full h-auto max-w-full object-cover"
+                            className="rounded-lg shadow-lg w-full h-auto object-cover"
                         />
                     </div>
                 </div>
             </div>
+
             {/* Equipe */}
-            <section id="team-section" className="h-screen w-full bg-[var(--cor-branco)] py-16">
-                <div className="flex justify-center items-center mb-20">
+            <section id="team-section" className="min-h-screen w-full bg-[var(--cor-branco)] py-16 flex flex-col justify-center">
+                <div className="flex justify-center items-center mb-12">
                     <h2 className="text-center font-bold text-[var(--cor-azul)] border-b-4 border-[var(--cor-azul)] inline-block pb-2 text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
                         Conheça Nossa Equipe
                     </h2>
                 </div>
-                <div className="flex flex-wrap justify-center gap-4">
+                {/* Cards da Equipe */}
+                <div className="flex flex-wrap justify-center gap-8 px-4">
                     <TeamMember imgSrc={andreEquipe} name="André Bonora" title="Engenheiro Eletricista" />
                     <TeamMember imgSrc={wanessaEquipe} name="Vanessa Marques" title="Arquiteta" />
                     <TeamMember imgSrc={casal} name="Edelcio de Araujo e Ana Carolina de Lima" title="Especialistas em Engenharia e Arquitetura" />
                 </div>
             </section>
+
             <Footer />
         </>
     );

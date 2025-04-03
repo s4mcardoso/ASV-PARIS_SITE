@@ -126,7 +126,7 @@ function Home() {
                         <img
                             src={asvParisLocation}
                             alt="Localização da ASV PARIS"
-                            className="rounded-lg shadow-lg w-full h-auto object-cover"
+                            className="rounded-lg shadow-lg w-full h-auto object-cover max-w-[70%] sm:max-w-[60%] md:max-w-[100%]"
                         />
                     </div>
                 </div>

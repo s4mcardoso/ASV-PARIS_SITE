@@ -108,13 +108,13 @@ function Home() {
             </Section>
             {/* Location Section */}
             <div className="relative flex flex-col min-h-screen bg-[var(--cor-branco)]">
-                <div className="flex flex-col md:flex-row container mx-auto w-full h-screen items-center justify-between z-10 px-6">
+                <div className="flex flex-col md:flex-row container mx-auto w-full h-auto items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 py-8">
                     {/* Texto */}
-                    <div className="flex flex-col justify-start items-start max-w-md w-full mb-12 gap-3 text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
-                        <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-left text-[var(--cor-azul)]">
+                    <div className="flex flex-col justify-center items-center text-center md:text-left max-w-md w-full gap-3">
+                        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[var(--cor-azul)] leading-tight">
                             Serviços de Engenharia <br /> e Arquitetura em Sorocaba
                         </h1>
-                        <p className="text-lg mt-2 text-left text-[var(--cor-amarelo-escuro)] md:text-xl lg:text-2xl">
+                        <p className="text-base sm:text-lg md:text-xl text-[var(--cor-amarelo-escuro)]">
                             Confie na ASV PARIS para soluções completas em engenharia elétrica, civil e arquitetura.
                             Localizada na Avenida Elias Maluf, nº 2067 (Piso Superior), nossa equipe de especialistas está pronta para
                             transformar seu projeto em realidade.
@@ -122,14 +122,17 @@ function Home() {
                     </div>
 
                     {/* Imagem */}
-                    <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 mx-auto">
+                    <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 flex justify-center mt-20">
                         <img
                             src={asvParisLocation}
                             alt="Localização da ASV PARIS"
-                            className="rounded-lg shadow-lg w-full h-auto object-cover max-w-[70%] sm:max-w-[60%] md:max-w-[100%]"
+                            className="rounded-lg shadow-lg w-full h-auto object-cover max-w-[70%] sm:max-w-[60%] md:max-w-[100%] mx-auto"
                         />
                     </div>
+
+
                 </div>
+
             </div>
 
             {/* Equipe */}

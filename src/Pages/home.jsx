@@ -139,7 +139,7 @@ function Home() {
             <section id="team-section" className="min-h-screen w-full bg-[var(--cor-branco)] py-16 flex flex-col justify-center">
                 <div className="flex justify-center items-center mb-12">
                     <h2 className="text-center font-bold text-[var(--cor-azul)] border-b-4 border-[var(--cor-azul)] inline-block pb-2 text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl">
-                        Conheça Nossa Equipe
+                        Nossa Equipe
                     </h2>
                 </div>
                 {/* Cards da Equipe */}

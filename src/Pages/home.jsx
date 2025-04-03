@@ -93,16 +93,16 @@ function Home() {
                     <h2 className="font-bold text-[var(--cor-azul)] whitespace-nowrap text-left sm:mb-0 text-3xl md:mb-0 lg:text-4xl lg:mb-[4rem] xl:mb-[3rem] xl:text-5xl">
                         Sobre
                     </h2>
-                    <h3 className="text-left mt-4 sm:text-xs md:text-[8px] lg:text-2xl xl:text-lg">Porque escolher a ASV PARIS:</h3>
+                    <h3 className="text-left mt-4 sm:text-xs md:text-[8px] lg:text-2xl xl:text-lg">Descubra por que a ASV PARIS é a escolha ideal para o seu projeto:</h3>
                     <ol className="list-decimal list-inside mt-2 sm:text-[6px] md:text-[8px] lg:text-2xl xl:text-lg">
                         <li><strong className="text-[var(--cor-azul)] sm:text-[6px] md:text-[8px] lg:text-lg xl:text-lg">Planejamento Integrado:</strong></li>
                         <p className="text-black sm:text-[6px] md:text-[8px] lg:text-lg xl:text-lg">Ao trabalharmos juntos desde o início, eliminamos a possibilidade de falhas de comunicação entre as diferentes especialidades, garantindo que todos os aspectos do projeto estejam alinhados.</p>
                         <li><strong className="text-[var(--cor-azul)] sm:text-[6px] md:text-[8px] xl:text-lg lg:text-lg ">Eficiência e Agilidade:</strong></li>
-                        <p className="sm:text-[6px] md:text-[8px] xl:text-lg lg:text-lg ">A coordenação entre engenheiros civis, eletricistas e arquitetos reduz os atrasos e melhora a eficiência no cronograma de execução.</p>
+                        <p className="sm:text-[6px] md:text-[8px] xl:text-lg lg:text-lg ">Nossa equipe integrada de engenheiros civis, eletricistas e arquitetos garante mais eficiência e menos atrasos no cronograma de execução.</p>
                         <li><strong className="text-[var(--cor-azul)] sm:text-[6px] md:text-[8px] xl:text-lg lg:text-lg ">Qualidade Superior:</strong></li>
                         <p className="sm:text-[6px] md:text-[8px] lg:text-lg xl:text-lg">Com uma equipe multidisciplinar, garantimos que cada detalhe do projeto seja pensado de forma holística, resultando em soluções de maior qualidade.</p>
                         <li><strong className="text-[var(--cor-azul)] sm:text-[6px] md:text-[8px] xl:text-lg lg:text-lg ">Tranquilidade para Você:</strong></li>
-                        <p className="sm:text-[6px] md:text-[8px] lg:text-lg xl:text-lg">Deixe os problemas conosco! Nossa abordagem integrada significa menos preocupações para você e um projeto mais fluido.</p>
+                        <p className="sm:text-[6px] md:text-[8px] lg:text-lg xl:text-lg">Foque no que realmente importa. Nós cuidaremos do resto! Nossa abordagem integrada significa menos preocupações para você e um projeto mais fluido.</p>
                     </ol>
                 </div>
             </Section>

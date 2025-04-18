@@ -60,20 +60,10 @@ function Home() {
                         </p>
                         <ContactButton href={`https://wa.me/5515988150433`}>Contato</ContactButton>
                     </div>
-                    <div className="flex-shrink-0 md:mt-0 order-1 lg:order-2 lg:mt-[7rem]">
-                        <img src={andreTraçado} alt="Engenheiro André" className="hidden md:block w-full h-auto max-w-lg object-cover md:mr-8" />
-                    </div>
                 </div>
             </section>
             {/* Construa com Nossa Equipe */}
             <Section bgImage={backgroundImage} overlayColor="bg-blue-900" overlayOpacity={70}>
-                <div className="flex-shrink-0 mt-6 md:mt-0 order-1 lg:order-1">
-                    <img
-                        src={wanessaTraçada}
-                        alt="Arquiteta Wanessa"
-                        className="hidden md:block w-full h-auto max-w-lg object-cover lg:ml-8 lg:mt-[17.185rem] xl:ml-16 xl:mb-[8rem]"
-                    />
-                </div>
                 <div className="flex flex-col justify-start items-start p-8 md:p-10 max-w-lg w-full gap-4 backdrop-blur-md rounded-lg shadow-lg bg-white z-20 ml-auto order-2 lg:order-2 lg:mr-[2rem]">
                     <h1 className="text-4xl md:text-6xl font-bold text-left text-[#FFD700]">Construa com Nossa Equipe</h1>
                     <p className="text-lg md:text-xl mt-2 text-left text-[#333333]">

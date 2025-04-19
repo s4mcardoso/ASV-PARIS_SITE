@@ -4,8 +4,6 @@ import { FaWhatsapp } from 'react-icons/fa';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const backgroundImage = '/Images/background-image.jpg';
-const andreTraçado = '/Images/andre-bonora-traçado-fino.png';
-const wanessaTraçada = '/Images/wanessa-arquiteta-traçado-fino.png';
 const asvParisLocation = '/Images/asvparis-localizacao.jpg';
 const casal = '/Images/casal.jpg';
 const wanessaEquipe = '/Images/wanessa-equipe.jpg';

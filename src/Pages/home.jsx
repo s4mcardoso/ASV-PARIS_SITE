@@ -324,7 +324,7 @@ function Home() {
 
                         <ServiceCard
                             title="Regularização"
-                            description="Regularização de imóveis e empreendimentos junto aos órgãos competentes, incluindo Habite-se e alvará de funcionamento."
+                            description="Regularização de imóveis e empreendimentos junto aos órgãos competentes."
                         />
 
                         <ServiceCard

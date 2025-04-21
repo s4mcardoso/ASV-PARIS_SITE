@@ -12,6 +12,7 @@ const casal = '/Images/casal.jpg';
 const wanessaEquipe = '/Images/wanessa-equipe.jpg';
 const andreEquipe = '/Images/andre-equipe.jpg';
 const imagemEngenharia4 = '/Images/imagem-engenharia4.jpg';
+const imagemEngenharia5 ='/Images/background4.jpg'
 
 // Componente de botão reutilizável com animação
 const ActionButton = ({ href, className, children, icon }) => (
@@ -220,7 +221,7 @@ function Home() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                         <div>
                             <img
-                                src={imagemEngenharia4}
+                                src={imagemEngenharia5}
                                 alt="ASV Paris Projetos"
                                 className="rounded-lg shadow-xl w-full h-auto"
                             />

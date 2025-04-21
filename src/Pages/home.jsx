@@ -12,7 +12,7 @@ const casal = '/Images/casal.jpg';
 const wanessaEquipe = '/Images/wanessa-equipe.jpg';
 const andreEquipe = '/Images/andre-equipe.jpg';
 const imagemEngenharia4 = '/Images/imagem-engenharia4.jpg';
-const imagemEngenharia5 ='/Images/background4.jpg'
+const imagemEngenharia5 ='/Images/background3.jpg'
 
 // Componente de botão reutilizável com animação
 const ActionButton = ({ href, className, children, icon }) => (

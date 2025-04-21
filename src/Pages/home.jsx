@@ -220,7 +220,7 @@ function Home() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                         <div>
                             <img
-                                src={imagemEngenharia4}
+                                src={imagem-Engenharia4}
                                 alt="ASV Paris Projetos"
                                 className="rounded-lg shadow-xl w-full h-auto"
                             />

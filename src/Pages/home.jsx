@@ -155,7 +155,7 @@ function Home() {
             <Header />
 
             {/* Hero Section com animação e CTA mais destacado */}
-            <section className="relative min-h-screen bg-gradient-to-br from-[var(--cor-azul)] to-[#001a33] flex items-center overflow-hidden">
+            <section id="hero-section" className="relative min-h-screen bg-gradient-to-br from-[var(--cor-azul)] to-[#001a33] flex items-center overflow-hidden">
                 {/* Elementos de fundo animados */}
                 <div className="absolute inset-0 overflow-hidden">
                     <div className="absolute -right-20 -top-20 w-96 h-96 bg-[var(--cor-amarelo)] rounded-full opacity-20 blur-3xl"></div>
@@ -211,7 +211,7 @@ function Home() {
             </section>
 
             {/* Seção Sobre com layout mais moderno */}
-            <Section id="about" overlayColor="bg-white" overlayOpacity={100} fullHeight={false}>
+            <Section id="about-section" overlayColor="bg-white" overlayOpacity={100} fullHeight={false}>
                 <div className="w-full max-w-6xl mx-auto">
                     <div className="flex flex-col items-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold text-[var(--cor-azul)]">Sobre a ASV PARIS</h2>
@@ -354,7 +354,7 @@ function Home() {
             </Section>
 
             {/* Seção de Localização com mapa interativo */}
-            <Section id="localizacao" overlayColor="bg-white" overlayOpacity={100} fullHeight={false}>
+            <Section id="localizacao-section" overlayColor="bg-white" overlayOpacity={100} fullHeight={false}>
                 <div className="w-full max-w-6xl mx-auto">
                     <div className="flex flex-col items-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold text-[var(--cor-azul)]">Nossa Localização</h2>
@@ -423,7 +423,7 @@ function Home() {
             </Section>
 
             {/* Nossa Equipe - Layout aprimorado */}
-            <Section id="team" bgImage={backgroundImage} overlayColor="bg-gray-900" overlayOpacity={90}>
+            <Section id="team-section" bgImage={backgroundImage} overlayColor="bg-gray-900" overlayOpacity={90}>
                 <div className="w-full max-w-6xl mx-auto">
                     <div className="flex flex-col items-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold text-white">Nossa Equipe</h2>

@@ -18,7 +18,7 @@ const Header = memo(() => {
   };
 
   return (
-    <header className="w-full bg-[#003060] h-auto flex flex-col md:flex-row items-center justify-between p-4 fixed top-0 z-50">
+    <header className="w-full bg-[#003060] h-auto flex flex-col md:flex-row items-center justify-between p-4">
       {/* Background com efeito blur */}
       <div className="absolute -right-20 -top-20 w-96 h-96 bg-[var(--cor-amarelo)] rounded-full opacity-20 blur-3xl"></div>
       <div className="flex items-center mr-auto">

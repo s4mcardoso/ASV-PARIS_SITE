@@ -337,7 +337,7 @@ function Home() {
             </Section >
 
             {/* Contador de estatísticas */}
-            <Section Section overlayColor="bg-[var(--cor-azul)]" overlayOpacity={100} fullHeight={false} >
+            <Section Section overlayColor="bg-[var(--cor-azul)]" overlayOpacity={92} fullHeight={false} >
                 <div className="w-full max-w-6xl mx-auto py-12">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                         <StatCounter number={50} label="Projetos Executados" />
@@ -456,7 +456,7 @@ function Home() {
             </Section >
 
             {/* Seção CTA */}
-            <section section className="bg-gradient-to-r from-[var(--cor-azul)] to-[#001a33] py-16" >
+            <section section className="bg-gradient-to-r from-[var(--cor-azul)] to-[#FFD700] py-16" >
                 <div className="container mx-auto px-4 text-center">
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                         Pronto para transformar seus projetos em realidade?

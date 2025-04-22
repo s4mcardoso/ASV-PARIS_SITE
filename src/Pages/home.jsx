@@ -193,6 +193,7 @@ function Home() {
                                 <img
                                     src="/Images/imagem-engenharia3.jpg"
                                     alt="Projeto ASV Paris"
+                                    loading="lazy"
                                     className="w-full h-auto object-cover rounded-lg shadow-2xl border-4 border-white/30"
                                     onError={(e) => {
                                         e.target.src = imagemEngenharia4;

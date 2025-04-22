@@ -12,7 +12,7 @@ const casal = '/Images/casal.jpg';
 const wanessaEquipe = '/Images/wanessa-equipe.jpg';
 const andreEquipe = '/Images/andre-equipe.jpg';
 const imagemEngenharia4 = '/Images/imagem-engenharia4.jpg';
-const imagemEngenharia5 ='/Images/background3.jpg'
+const imagemEngenharia5 = '/Images/background3.jpg'
 
 // Componente de botão reutilizável com animação
 const ActionButton = ({ href, className, children, icon }) => (
@@ -155,7 +155,7 @@ function Home() {
             <Header />
 
             {/* Hero Section com animação e CTA mais destacado */}
-            <section id="hero-section" className="relative min-h-screen bg-gradient-to-br from-[var(--cor-azul)] to-[#001a33] flex items-center overflow-hidden">
+            <section id="hero-section" className="relative min-h-screen bg-gradient-to-br from-[var(--cor-azul)] to-[#001a33] flex items-center overflow-hidden pt-[7rem]">
                 {/* Elementos de fundo animados */}
                 <div className="absolute inset-0 overflow-hidden">
                     <div className="absolute -right-20 -top-20 w-96 h-96 bg-[var(--cor-amarelo)] rounded-full opacity-20 blur-3xl"></div>
@@ -183,12 +183,6 @@ function Home() {
                                     >
                                         Fale Conosco
                                     </ActionButton>
-                                    <ActionButton
-                                        href="#services"
-                                        className="bg-transparent border-2 border-white text-white hover:bg-white/10"
-                                    >
-                                        Nossos Serviços
-                                    </ActionButton>
                                 </div>
                             </div>
                         </div>
@@ -208,10 +202,10 @@ function Home() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* Seção Sobre com layout mais moderno */}
-            <Section id="about-section" overlayColor="bg-white" overlayOpacity={100} fullHeight={false}>
+            <Section Section id="about-section" overlayColor="bg-white" overlayOpacity={100} fullHeight={false} >
                 <div className="w-full max-w-6xl mx-auto">
                     <div className="flex flex-col items-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold text-[var(--cor-azul)]">Sobre a ASV PARIS</h2>
@@ -288,17 +282,17 @@ function Home() {
                         </div>
                     </div>
                 </div>
-            </Section>
+            </Section >
 
             {/* Seção de Serviços Aprimorada */}
-            <Section
-                id="services"
+            <Section Section
+
                 bgImage={backgroundImage}
                 overlayColor="bg-[var(--cor-azul)]"
                 overlayOpacity={90}
             >
                 <div className="w-full max-w-6xl mx-auto">
-                    <div className="flex flex-col items-center mb-16">
+                    <div id="#services" className="flex flex-col items-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold text-white">Nossos Serviços</h2>
                         <div className="w-24 h-1 bg-[var(--cor-amarelo)] mt-4"></div>
                         <p className="mt-6 text-lg text-center text-white/80 max-w-2xl">
@@ -339,10 +333,10 @@ function Home() {
                         />
                     </div>
                 </div>
-            </Section>
+            </Section >
 
             {/* Contador de estatísticas */}
-            <Section overlayColor="bg-[var(--cor-azul)]" overlayOpacity={100} fullHeight={false}>
+            <Section Section overlayColor="bg-[var(--cor-azul)]" overlayOpacity={100} fullHeight={false} >
                 <div className="w-full max-w-6xl mx-auto py-12">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                         <StatCounter number={50} label="Projetos Executados" />
@@ -351,10 +345,10 @@ function Home() {
                         <StatCounter number={30} label="Parceiros" />
                     </div>
                 </div>
-            </Section>
+            </Section >
 
             {/* Seção de Localização com mapa interativo */}
-            <Section id="localizacao-section" overlayColor="bg-white" overlayOpacity={100} fullHeight={false}>
+            <Section Section id="localizacao-section" overlayColor="bg-white" overlayOpacity={100} fullHeight={false} >
                 <div className="w-full max-w-6xl mx-auto">
                     <div className="flex flex-col items-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold text-[var(--cor-azul)]">Nossa Localização</h2>
@@ -386,7 +380,7 @@ function Home() {
                                     </div>
                                     <div className="mt-6">
                                         <ActionButton
-                                            href="https://goo.gl/maps/yourMapLink"
+                                            href="https://www.google.com/maps?ll=-23.49145,-47.511431&z=18&t=m&hl=pt-BR&gl=BR&mapclient=embed&q=Av.+Elias+Maluf,+2067+-+Wanel+Ville+Sorocaba+-+SP+18055-215"
                                             className="bg-[var(--cor-azul)] text-white hover:bg-[var(--cor-amarelo)]"
                                             icon={<FaMapMarkerAlt />}
                                         >
@@ -420,10 +414,10 @@ function Home() {
                         </div>
                     </div>
                 </div>
-            </Section>
+            </Section >
 
             {/* Nossa Equipe - Layout aprimorado */}
-            <Section id="team-section" bgImage={backgroundImage} overlayColor="bg-gray-900" overlayOpacity={90}>
+            <Section Section id="team-section" bgImage={backgroundImage} overlayColor="bg-gray-900" overlayOpacity={90} >
                 <div className="w-full max-w-6xl mx-auto">
                     <div className="flex flex-col items-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold text-white">Nossa Equipe</h2>
@@ -458,10 +452,10 @@ function Home() {
                         />
                     </div>
                 </div>
-            </Section>
+            </Section >
 
             {/* Seção CTA */}
-            <section className="bg-gradient-to-r from-[var(--cor-azul)] to-[#001a33] py-16">
+            <section section className="bg-gradient-to-r from-[var(--cor-azul)] to-[#001a33] py-16" >
                 <div className="container mx-auto px-4 text-center">
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                         Pronto para transformar seus projetos em realidade?
@@ -478,7 +472,7 @@ function Home() {
                         Fale com um Especialista
                     </ActionButton>
                 </div>
-            </section>
+            </section >
 
             <Footer />
         </>

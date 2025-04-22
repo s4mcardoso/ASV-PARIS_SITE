@@ -13,7 +13,7 @@
 
 /* Global Styles */
 html, body {
-  background-color: var(--cor-cinza-claro);
+  background-color: var(#003060);
   font-family: 'Poppins', sans-serif;
   height: 100%;
   margin: 0;

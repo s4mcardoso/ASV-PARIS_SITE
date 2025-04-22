@@ -337,7 +337,7 @@ function Home() {
             </Section >
 
             {/* Contador de estatísticas */}
-            <Section Section overlayColor="bg-[var(--cor-azul)]" overlayOpacity={92} fullHeight={false} >
+            <Section Section overlayColor="bg-[var(--cor-azul)]" overlayOpacity={90} fullHeight={false} >
                 <div className="w-full max-w-6xl mx-auto py-12">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                         <StatCounter number={50} label="Projetos Executados" />

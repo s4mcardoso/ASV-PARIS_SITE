@@ -10,7 +10,6 @@ const Footer = memo(() => {
 
   return (
     <footer className="w-full custom-bg-blue py-2 px-4 md:py-4 md:px-8 lg:py-6 lg:px-12">
-      
       <div className="container mx-auto flex flex-col lg:flex-row items-start sm:items-center justify-between">
         {/* Ícones (primeiro no mobile) */}
         <div className="flex gap-2 items-center mb-4 lg:mb-6 order-1 sm:order-1 md:order-1 lg:order-2 -ml-0 sm:ml-0">

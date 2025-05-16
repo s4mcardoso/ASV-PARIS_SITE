@@ -336,18 +336,6 @@ function Home() {
                 </div>
             </Section >
 
-            {/* Contador de estatísticas */}
-            <Section Section overlayColor="bg-[var(--cor-azul)]" overlayOpacity={90} fullHeight={false} >
-                <div className="w-full max-w-6xl mx-auto py-12">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                        <StatCounter number={50} label="Projetos Executados" />
-                        <StatCounter number={15} label="Anos de Experiência" />
-                        <StatCounter number={100} label="Clientes Satisfeitos" />
-                        <StatCounter number={30} label="Parceiros" />
-                    </div>
-                </div>
-            </Section >
-
             {/* Seção de Localização com mapa interativo */}
             <Section Section id="localizacao-section" overlayColor="bg-white" overlayOpacity={100} fullHeight={false} >
                 <div className="w-full max-w-6xl mx-auto">
